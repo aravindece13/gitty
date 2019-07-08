@@ -1,0 +1,18 @@
+﻿<%@ Master Language="VB" MasterPageFile="~/MasterPages/Site.master" AutoEventWireup="false" CodeFile="Operations.master.vb" Inherits="MasterPages_Operations" %>
+<%@ Register Src="~/Controls/deptNav_Operations.ascx" TagName="OperationsMenuNav" TagPrefix="uc1" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
+    <asp:ContentPlaceHolder id="HeaderContentPlaceHolder" runat="server">
+            
+    </asp:ContentPlaceHolder>
+</asp:Content>
+
+
+<asp:Content ID="Content2" ContentPlaceHolderID="BodyContentPlaceHolder" Runat="Server">
+    <uc1:OperationsMenuNav runat="server" />     
+        
+        <asp:ContentPlaceHolder id="BodyContentPlaceHolder" runat="server">
+            
+        </asp:ContentPlaceHolder> 
+
+</asp:Content>
+

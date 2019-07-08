@@ -1,0 +1,164 @@
+﻿<%@ Master Language="VB" CodeFile="Site_old.master.vb" Inherits="MasterPages_Site" %>
+<%@ Register TagPrefix="telerik" Namespace="Telerik.Web.UI" Assembly="Telerik.Web.UI" %>
+<%--<%@ Register TagPrefix="customControls" tagName="SiteMasterNav" src="~/Controls/SiteMasterNav.ascx"%>--%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Dana Kepner Company, Inc. | Western Industrial Supply, LLC.</title>
+    
+      
+    <asp:ContentPlaceHolder id="head" runat="server">
+    
+    </asp:ContentPlaceHolder>
+
+    <link rel="Stylesheet" type="text/css" href="../Intranet3StyleSheet.css" />
+</head>
+<body>
+    
+    
+    <form id="form1" runat="server" style="height:100%;margin:0px">
+      <div style="display: none"> 
+        
+      
+      </div> 
+    
+    <telerik:RadScriptManager ID="RadScriptManager1" runat="server"></telerik:RadScriptManager>
+    <telerik:RadAjaxManager ID="RadAjaxManager1" runat="server"></telerik:RadAjaxManager>
+    <telerik:RadSkinManager ID="RadSkinManager1" runat="server" ></telerik:RadSkinManager>
+    
+    <telerik:RadWindow ID="RadWindow1" runat="server" OpenerElementID="divuserName" 
+            NavigateUrl="~/UserProfile.aspx" Title="User Profile" 
+            Behaviors="Close, Move" Height="575px" Left="250px" Top="150px" 
+            Width="750px" VisibleStatusbar="False">
+    
+    </telerik:RadWindow>
+        
+    <div id="PrimaryNavigation" style="float:left">
+        <asp:ImageMap ID="ImageMap1" runat="server" Height="30px" ImageAlign="Left" ImageUrl="~/Images/HeaderBlue100x30.gif" Width="100px"></asp:ImageMap>
+        
+        <customControls:SiteMasterNav runat="server" />
+        
+        <div id="divuserName" style="margin: 2px 2px 2px 10px; width:150px; float:left;"  >    
+                <asp:Label ID="LabelUserName" runat="server" Text="" 
+                     Font-Size="Medium" ForeColor="Black" Font-Bold="true"></asp:Label>
+                     
+        </div>
+       
+    
+    
+    </div> 
+      
+      
+      
+        
+    
+    <div id="SecondaryNavigation" style="float:left">
+        <telerik:RadSplitter ID="RadSplitter1" runat="server" Height="800px" width="1200px"
+            SplitBarsSize="">
+            <telerik:RadPane ID="RadPane1" runat="server" Width="25px">
+                <telerik:RadSlidingZone ID="RadSlidingZone1" runat="server">
+                    <telerik:RadSlidingPane ID="RadSlidingPane1" runat="server" Title="Forms & General Info" Width="200px" Font-Names="Century Gothic" Font-Size="Medium" Font-Bold="true">
+                        <telerik:RadPanelBar ID="RadPanelBar1" runat="server" Width="100%" >
+                            <Items>
+                                <telerik:RadPanelItem runat="server" Text="Human Resources">
+                                    <Items>
+                                        <telerik:RadPanelItem runat="server" Text="New Employee" NavigateUrl="~/Information/Form_NewEmployee.pdf" Target="_blank"></telerik:RadPanelItem>
+                                        <telerik:RadPanelItem runat="server" Text="Status Change" NavigateUrl="~/Information/Form_StatusChange.pdf" Target="_blank"></telerik:RadPanelItem>
+                                        <telerik:RadPanelItem runat="server" Text="I-9" NavigateUrl="~/Information/Form_I9.pdf" Target="_blank"></telerik:RadPanelItem>
+                                        <telerik:RadPanelItem runat="server" Text="W4" NavigateUrl="~/Information/Form_W4.pdf" Target="_blank"></telerik:RadPanelItem>
+                                        <telerik:RadPanelItem runat="server" Text="Employee Warning" NavigateUrl="~/Information/Form_EmployeeWarning.pdf" Target="_blank"></telerik:RadPanelItem>
+                                    </Items>
+                                </telerik:RadPanelItem>
+                                <telerik:RadPanelItem runat="server" Text="IT / Communications">
+                                    <Items>
+                                        <telerik:RadPanelItem runat="server" Text="Phone/Fax/Extensions" NavigateUrl="~/Reports/IT/IT_PhoneFaxListing.aspx" Target="_blank"></telerik:RadPanelItem>
+                                        <telerik:RadPanelItem runat="server" Text="Printer Listing" NavigateUrl="~/Information/printers.pdf" Target="_blank"></telerik:RadPanelItem>
+                                        
+                                        <telerik:RadPanelItem runat="server" Text="Systems Security Request" NavigateUrl="~/Information/Form_IS_SecurityAccess.pdf" Target="_blank"></telerik:RadPanelItem>
+                                        
+                                    
+                                    </Items>
+                                </telerik:RadPanelItem>
+                                <telerik:RadPanelItem runat="server" Text="Sales Process">
+                                    <Items>
+                                        <telerik:RadPanelItem runat="server" Text="Credit App - Kepner" NavigateUrl="~/Information/Form_CreditAppDK.pdf" Target="_blank"></telerik:RadPanelItem>
+                                        <telerik:RadPanelItem runat="server" Text="Credit App - Western" NavigateUrl="~/Information/Form_CreditAppWI.pdf" Target="_blank"></telerik:RadPanelItem>
+                                        <telerik:RadPanelItem runat="server" Text="Credit App - Arizona" NavigateUrl="~/Information/Form_CreditAppDK_AZ.pdf" Target="_blank"></telerik:RadPanelItem>
+                                        <telerik:RadPanelItem runat="server" Text="Arizona Tax Exempt (5000)" NavigateUrl="~/Information/Form_AzTaxExempt5000.pdf" Target="_blank"></telerik:RadPanelItem>
+                                        <telerik:RadPanelItem runat="server" Text="New Job Info" NavigateUrl="~/Information/Form_JobInfo.pdf" Target="_blank"></telerik:RadPanelItem>
+                                        <telerik:RadPanelItem runat="server" Text="PVC Quote Request" NavigateUrl="~/Information/Form_QuoteRequestPVC.pdf" Target="_blank"></telerik:RadPanelItem>
+                                        <telerik:RadPanelItem runat="server" Text="Stock Return" NavigateUrl="~/Information/Form_StockReturn.pdf" Target="_blank"></telerik:RadPanelItem>
+                                        <telerik:RadPanelItem runat="server" Text="Stock Adjustments" NavigateUrl="~/Information/Form_StockAdjustments.pdf" Target="_blank"></telerik:RadPanelItem>
+                                        <telerik:RadPanelItem runat="server" Text="Damaged Material" NavigateUrl="~/Information/Form_DamagedMaterial.pdf" Target="_blank"></telerik:RadPanelItem>
+                                        <telerik:RadPanelItem runat="server" Text="New Product Request" NavigateUrl="~/Information/Form_NewProduct.pdf" Target="_blank"></telerik:RadPanelItem>
+                                        <telerik:RadPanelItem runat="server" Text="Account Change Request" NavigateUrl="~/Information/Form_AccountChange.pdf" Target="_blank"></telerik:RadPanelItem>
+                                    </Items>
+                                </telerik:RadPanelItem>
+                                <telerik:RadPanelItem runat="server" Text="Reference">
+                                    <Items>
+                                        <telerik:RadPanelItem runat="server" Text="Product Categories" NavigateUrl="~/Information/Product_Categories.pdf" Target="_blank"></telerik:RadPanelItem>
+                                        <telerik:RadPanelItem runat="server" Text="Product Lines" NavigateUrl="~/Information/Product_lines.pdf" Target="_blank"></telerik:RadPanelItem>
+                                        <telerik:RadPanelItem runat="server" Text="Product Categories & Lines" NavigateUrl="~/Information/Training_CategoryAndProductLines.pdf" Target="_blank"></telerik:RadPanelItem>
+                                        <telerik:RadPanelItem runat="server" Text="Branch Addresses - Excel" NavigateUrl="~/Information/BranchDetail.xls" Target="_blank"></telerik:RadPanelItem>
+                                        <telerik:RadPanelItem runat="server" Text="Branch Addresses - PDF" NavigateUrl="~/Information/BranchDetail.pdf" Target="_blank"></telerik:RadPanelItem>
+                                        <telerik:RadPanelItem runat="server" Text="TDG Vendors" NavigateUrl="~/Information/TDG_Vendors.pdf" Target="_blank"></telerik:RadPanelItem>
+                                        <telerik:RadPanelItem runat="server" Text="TDG Vendor Profiles" NavigateUrl="~/Information/TDG_Vendor_Profiles.pdf" Target="_blank"></telerik:RadPanelItem>
+                                    </Items>
+                                </telerik:RadPanelItem>
+                                <telerik:RadPanelItem runat="server" Text="Payroll">
+                                    <Items>
+                                        <telerik:RadPanelItem runat="server" Text="Timesheet - Hourly" NavigateUrl="~/Information/Kepner_NonExemptTimeSheet.xls" Target="_blank"></telerik:RadPanelItem>
+                                        <telerik:RadPanelItem runat="server" Text="Timesheet - Salary" NavigateUrl="~/Information/Form_Timesheet_Exempt.pdf" Target="_blank"></telerik:RadPanelItem>
+                                        <telerik:RadPanelItem runat="server" Text="Time Off Request" NavigateUrl="~/Information/Form_TimeOffRequest.pdf" Target="_blank"></telerik:RadPanelItem>
+                                        <telerik:RadPanelItem runat="server" Text="Direct Deposit" NavigateUrl="~/Information/Form_DirectDeposit.pdf" Target="_blank"></telerik:RadPanelItem>
+                                        <telerik:RadPanelItem runat="server" Text="Check Request" NavigateUrl="~/Information/Form_CheckRequest.pdf" Target="_blank"></telerik:RadPanelItem>
+                                        <telerik:RadPanelItem runat="server" Text="Expense Report Instructions" NavigateUrl="~/Information/Form_ExpenseReportInstructions.pdf" Target="_blank"></telerik:RadPanelItem>
+                                     </Items>
+                                </telerik:RadPanelItem>
+                              </Items>
+                            
+                          </telerik:RadPanelBar>
+                    </telerik:RadSlidingPane>
+                
+                </telerik:RadSlidingZone>
+            
+            
+            
+            </telerik:RadPane>
+        
+            <telerik:RadPane ID="RadPane2" runat="server" Width="1100px" >
+              
+                
+                <div id="BodyContent" style="float:left">
+                
+                   
+                
+                    <asp:ContentPlaceHolder id="BodyContentPlaceHolder" runat="server">
+                        
+                
+                    </asp:ContentPlaceHolder>
+            
+                </div>   
+                          
+            
+            </telerik:RadPane>
+        
+        
+        
+        </telerik:RadSplitter>
+    
+    
+    
+    </div> 
+     
+        
+    
+        
+        
+        
+        
+   
+    </form>
+</body>
+</html>

@@ -1,0 +1,32 @@
+﻿<%@ Master Language="VB" CodeFile="Popups.master.vb" Inherits="MasterPages_Popups" %>
+<%@ Register TagPrefix="telerik" Namespace="Telerik.Web.UI" Assembly="Telerik.Web.UI" %>
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+<link rel="Stylesheet" type="text/css" href="../Intranet3StyleSheet.css" />
+</head>
+<body>
+    
+  
+    
+    
+<form id="form1" runat="server" defaultbutton="btnDontPostBack" >
+    <asp:Button ID="btnDontPostBack" runat="server" OnClientClick="javascript:return false;" style="display:none;" />
+    
+    <telerik:RadScriptManager ID="RadScriptManager1" runat="server"></telerik:RadScriptManager>
+    <telerik:RadAjaxManager ID="RadAjaxManager1" runat="server"></telerik:RadAjaxManager>
+    <%--<telerik:RadFormDecorator ID="RadFormDecorator1" runat="server" Skin="Metro" DecoratedControls="CheckBoxes,Label,RadioButtons,ScrollBars,Select,Textarea,Textbox" />--%>
+    <div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+</form>
+</body>
+</html>

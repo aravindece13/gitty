@@ -1,0 +1,542 @@
+﻿.RadTabStrip_Metro .rtsLevel .rtsTxt
+    {
+        text-transform: none !important;
+    }
+
+
+body
+{
+    font-family: 'Trebuchet MS';
+    line-height: 1.166;
+    margin: 0px;
+    padding: 0px;
+    font-size: 12px;
+}
+
+p
+{
+    font-family: 'Trebuchet MS';
+    font-size: Small;
+    margin: 3px;
+    color: #000000;
+    padding: 5px 5px 5px 10px;
+    width: 80%;
+}
+
+label
+{
+    font-family: 'Trebuchet MS';
+    font-weight:normal; 
+    font-size:medium;
+    padding: 1px 2px 1px 2px;
+    }
+    
+.myLabelCss
+    {
+        font-family: 'Trebuchet MS';
+        font-size: small;
+        font-weight:bold;
+        color:Gray;
+        margin-right:3px;
+    }
+    
+    .myLabelCssLarge
+    {
+        font-family: 'Trebuchet MS';
+        font-size: Large;
+        font-weight:bold;
+        color:Gray;
+        margin-right:5px;
+    }
+    
+     .myLabelCssMedium
+    {
+        font-family: 'Trebuchet MS';
+        font-size: Medium;
+        font-weight:bold;
+        color:Gray;
+        margin-right:5px;
+        
+    }
+    .myLabelCssXSmall
+    {
+        font-family: 'Trebuchet MS';
+        font-size:  xx-small;
+        font-weight:bold;
+        color:Gray;
+        margin-right:3px;
+    }
+    
+    
+/******* hyperlink and anchor tag styles *******/
+
+a:link, a:visited
+{
+    color: #FF0000;
+    text-decoration: none;
+    font-family: 'Trebuchet MS';
+    font-weight: normal;
+}
+
+a:hover
+{
+    color: Orange;
+    font-family: 'Trebuchet MS';
+    font-weight: normal;
+}
+
+/************** header tag styles **************/
+
+h1
+{
+    font-family: 'Trebuchet MS';
+    font-size: 20px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    text-align: left;
+    text-indent: 3px;
+    vertical-align: top;
+    margin: 3px;
+    padding: 4px;
+    color: #103452;
+    background-color: #FFFFFF;
+    width: 90%;
+}
+
+h2
+{
+    font-family: 'Trebuchet MS';
+    font-size: 20px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    text-align: left;
+    text-indent: 5px;
+    vertical-align: middle;
+    margin: 10px 0px 10px 0px;
+    padding: 6px;
+    color: #000000;
+    background-color: #EFB231;
+    width: 50%;
+}
+
+h3
+{
+    font-family: 'Trebuchet MS';
+    font-size: 16px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    text-align: left;
+    text-indent: 5px;
+    vertical-align: middle;
+    margin: 10px 0px 10px 3px;
+    padding: 3px;
+    color: #FFFFFF;
+    background-color: #21865A;
+    width: 100%;
+}
+h4
+{
+    font-family: 'Trebuchet MS';
+    font-size: 17px;
+    font-variant: normal;
+    font-weight: normal;
+    text-align: left;
+    text-indent: 5px;
+    vertical-align: middle;
+    margin: 3px 0px 3px 0px;
+    padding: 5px;
+    color: #FFFFFF;
+    background-color: #4c68a2;
+    width: 100%;
+}
+
+
+h5
+{
+    border-color: #21865A;
+    border-width: 2px;
+    padding: 3px;
+    font-family: 'Trebuchet MS';
+    font-size: 15px;
+    color: #4c68a2;
+    margin: 10px 0px 3px 2px;
+    font-weight: bold;
+    text-indent: 2px;
+    text-align: left;
+    width: 95%;
+    font-style: normal;
+    border-bottom-style: solid;
+}
+
+h6
+{
+    padding: 3px;
+    font-family: 'Trebuchet MS';
+    font-size: 15px;
+    color: #21865A;
+    margin: 5px 0px 5px 0px;
+    font-weight: bold;
+    text-indent: 0px;
+    text-align: left;
+    width: 100%;
+    font-style: normal;
+}
+
+
+
+
+/*************** list tag styles ***************/
+
+ul{
+ list-style-type: square;
+}
+
+ul, li 
+{
+    list-style-type:none;
+    padding:0;
+    margin-right:30px;
+    }
+
+ul ul{
+ list-style-type: disc;
+}
+
+ul ul ul{
+ list-style-type: none;
+}
+
+
+#deptMenu
+{
+    margin: 2px;
+    padding: 2px;
+    font-size: Large;
+    height: 1.75em;
+    background: #FFFFFF;
+    width: 100%;
+    vertical-align: middle;
+    line-height: 1.75em;
+    font-family: 'Trebuchet MS';
+    font-style: normal;
+    font-weight: bolder;
+    font-variant: normal;
+    color: #639AFF;
+}
+
+#deptMenu ul
+{
+    margin:0;
+    padding:0px;
+    
+}
+
+#deptMenu li
+{
+    float: left;
+    margin-right:30px;
+}
+    
+#deptMenu li a
+{
+   display: block;
+    padding: 0px 10px 0px 10px;
+    border-right-style: none;
+}
+
+#deptMenu li a:link
+{
+    color: #639AFF;
+}
+    
+#deptMenu li a:hover, #deptMenuSecureWide li a:focus
+{
+    
+    border-bottom-style: solid;
+    border-bottom-width: 3px;
+    border-bottom-color: #FFD752;
+}
+#deptMenu li a:visited
+{
+    color: #639AFF;
+}
+
+
+#deptMenuWide
+{
+    margin: 2px 0px 2px 2px;
+    padding: 2px;
+    font-size: small;
+    height: 1.75em;
+    background: #6699FF;
+    width: 100%;
+    vertical-align: middle;
+    line-height: 1.75em;
+    font-family: 'Trebuchet MS';
+    font-style: normal;
+    font-weight: bold;
+    font-variant: normal;
+    color: #FFFFFF;
+}
+
+#deptMenuWide ul
+{
+    margin:0;
+    padding:0px;
+    
+}
+
+#deptMenuWide li
+{
+    float: left;
+    margin-right:30px;
+    
+   
+}
+    
+#deptMenuWide li a
+{
+    display: block;
+    padding: 0px 2px 0px 2px;
+}
+
+#deptMenuWide li a:link
+{
+    color: #FFFFFF;
+}
+    
+#deptMenuWide li a:hover, #deptMenuSecureWide li a:focus
+{
+    border-bottom-style: solid;
+    border-bottom-width: 5px;
+    border-bottom-color: #FFD752;
+}
+
+#deptMenuWide li a:visited
+{
+    color: #FFFFFF;
+}
+
+#deptMenuSecure
+{
+    margin: 5px 15px 5px 0px;;
+    padding: 2px;
+    font-size: medium;
+    height: 1.75em;
+    background: #103452;
+    width: 100%;
+    vertical-align: middle;
+    line-height: 1.75em;
+    font-family: 'Trebuchet MS';
+    font-style: normal;
+    font-weight: bold;
+    font-variant: normal;
+    color: #FFFFFF;
+}
+
+#deptMenuSecure ul
+{
+    margin: 0px;
+    padding:0px;
+    
+}
+
+#deptMenuSecure li
+{
+    float: left;
+    margin-right:30px;
+    
+    
+    
+   
+    
+}
+    
+#deptMenuSecure li a
+{
+    display: block;
+    padding: 0px 10px 0px 10px;
+    border-right-style: solid;
+    border-right-width: 1px;
+    border-right-color: #FFD752;
+  
+}
+
+#deptMenuSecure li a:link
+{
+    color: #FFFFFF;
+
+}
+    
+#deptMenuSecure li a:hover, #deptMenuSecureWide li a:focus
+{
+    color: #FFD752;
+    text-decoration: underline;
+  
+}
+
+#deptMenuSecure li a:visited
+{
+    color: #FFFFFF;
+ 
+}
+
+
+#deptMenuSecureWide
+{
+    margin: 3px 0px 2px 3px;
+    padding: 2px;
+    font-size: Medium;
+    height: 1.75em;
+    background: #FFFFFF;
+    width: 100%;
+    vertical-align: middle;
+    line-height: 1.75em;
+    font-family: 'Trebuchet MS';
+    font-style: normal;
+    font-weight: bold;
+    font-variant: normal;
+    color: #CC3300;
+}
+
+#deptMenuSecureWide ul
+{
+    margin:0;
+    padding:0px;
+    
+}
+
+#deptMenuSecureWide li
+{
+    float: left;
+    margin-right:30px;
+    
+}
+    
+#deptMenuSecureWide li a
+{
+    display: block;
+    padding: 0px 5px 0px 5px;
+    border-right-style: none;
+
+   
+}
+
+#deptMenuSecureWide li a:link
+{
+    color: #CC3300;
+}
+    
+#deptMenuSecureWide li a:hover, #deptMenuSecureWide li a:focus
+{
+   
+    border-bottom-style: solid;
+    border-bottom-width: 5px;
+    border-bottom-color: #FFD752;
+}
+
+#deptMenuSecureWide li a:visited
+{
+    color: #CC3300;
+}
+
+
+
+
+#bidToolMenu
+{
+    margin: 5px;
+    padding: 2px;
+    font-size: 14px;
+    height: 1.5em;
+    background: #E78642;
+    width: 100%;
+    vertical-align: middle;
+    line-height: 1.5em;
+    font-family: 'Trebuchet MS';
+    font-style: normal;
+    font-weight: bold;
+    font-variant: normal;
+    color: #FFFFFF;
+}
+
+#bidToolMenu ul
+{
+    margin:0;
+    padding:0px;
+    
+}
+
+#bidToolMenu li
+{
+    float: left;
+    
+    
+   
+    
+}
+    
+#bidToolMenu li a
+{
+    display: block;
+    padding: 0px 10px 0px 10px;
+    border-right-style: solid;
+    border-right-width: 1px;
+    border-right-color: #103452;
+}
+
+#bidToolMenu li a:link
+{
+    color: #FFFFFF;
+}
+    
+#bidToolMenu li a:hover, #bidTool li a:focus
+{
+    text-decoration: underline;
+}
+
+#bidToolMenu li a:visited
+{
+    color: #FFFFFF;
+}
+
+
+
+
+#NewsHeadline
+{
+    margin: 1px;
+    padding: 1px;
+    font-family: 'Trebuchet MS';
+    font-size: 12px;
+    font-weight: bold; 
+    color:blue;
+    width:100%;
+}
+
+#NewsItem
+{
+    margin: 1px;
+    padding: 1px;
+    font-family: 'Trebuchet MS';
+    font-size: 12px;
+    font-weight: normal;
+    color:Black;
+    
+}
+
+#NewsProperties
+{
+    margin: 1px;
+    padding: 0px;
+    font-family: 'Trebuchet MS';
+    font-size: 9px;
+    font-weight: normal;
+    color:black;
+    
+}
+
+
