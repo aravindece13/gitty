@@ -57,11 +57,11 @@
 
     <div id="divFilters" style="width:1100px; height:30px;Margin: 0px 0px 0px 0px; float:left;">
         <div style="width:260px;float:left;margin-right:10px;">
-            <telerik:RadTextBox ID="fltrName_First" runat="server" Label="First Name: " Width="220px" LabelWidth="80px" LabelCssClass="myLabelCss" >
+            <telerik:RadTextBox ID="fltrName_First" runat="server" Label="First Name: " Width="220px" LabelWidth="80px" LabelCssClass="myLabelCss" AutoPostBack = "true">
             </telerik:RadTextBox>
         </div>
         <div style="width:260px;float:left;margin-right:10px;">
-            <telerik:RadTextBox ID="fltrName_Last" runat="server" Label="Last Name: " Width="220px" LabelWidth="80px" LabelCssClass="myLabelCss">
+            <telerik:RadTextBox ID="fltrName_Last" runat="server" Label="Last Name: " Width="220px" LabelWidth="80px" LabelCssClass="myLabelCss" AutoPostBack="true">
             </telerik:RadTextBox>
         </div>
         <div style="width:260px;float:left;margin-right:10px;">
