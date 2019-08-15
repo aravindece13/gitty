@@ -53,7 +53,8 @@
      
       <div id="divCurrentStateTab" style="width:1300px; Margin:0px 0px 5px 0px; float:left;">
     
-           <telerik:RadTabStrip ID="States" runat="server"  Width="1000px" ScrollChildren="true" Skin="MetroTouch" >
+           <telerik:RadTabStrip ID="States" runat="server"  Width="1000px" 
+               ScrollChildren="True" Skin="MetroTouch" SelectedIndex="1" >
              <Tabs>
                    <telerik:RadTab runat="server" Text="Arizona" SelectedIndex="-1" Value="7">
                         <Tabs>
@@ -61,6 +62,8 @@
                             <telerik:RadTab runat="server" Text="8-Tucson" Value="8"></telerik:RadTab>
                             <telerik:RadTab runat="server" Text="15-Prescott" Value="15"></telerik:RadTab>
                             <%--<telerik:RadTab runat="server" Text="16-Flagstaff" Value="16"></telerik:RadTab>--%>
+                            <telerik:RadTab runat="server" Text="16-Flagstaff" Value="16">
+                            </telerik:RadTab>
                             <telerik:RadTab runat="server" Text="17-Lake Havasu" Value="17"></telerik:RadTab>
                             <telerik:RadTab runat="server" Text="18-Show Low" Value="18"></telerik:RadTab>
                         </Tabs>
@@ -105,7 +108,8 @@
       
         <div id="divCurrentEmpListing" style="Margin: 0px 10px 0px 0px;width:800px; float:left; ">
         
-            <telerik:RadGrid ID="GrdCurrentEmployees" runat="server" Width="800px" Height="550px" DataSourceID="SqlDS_Employees" GridLines="None"  >
+            <telerik:RadGrid ID="GrdCurrentEmployees" runat="server" Width="800px" 
+                Height="550px" DataSourceID="SqlDS_Employees"  >
                 
                  <GroupingSettings CaseSensitive="false" />
                 
