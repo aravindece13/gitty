@@ -120,6 +120,7 @@
                                         <telerik:RadTab runat="server" Text="7-Phoenix" Value="7" ></telerik:RadTab>
                                         <telerik:RadTab runat="server" Text="8-Tucson" Value="8"></telerik:RadTab>
                                         <telerik:RadTab runat="server" Text="15-Prescott" Value="15"></telerik:RadTab>
+                                        <telerik:RadTab runat="server" Text="16-Flagstaff" Value="16"></telerik:RadTab> 
                                         <telerik:RadTab runat="server" Text="17-Lake Havasu" Value="17"></telerik:RadTab>
                                         <telerik:RadTab runat="server" Text="18-Show Low" Value="18"></telerik:RadTab>
                                     </Tabs>
@@ -245,7 +246,9 @@
                                             
                                             <telerik:RadComboBoxItem runat="server" Text="13-Odessa" Value="13" />
                                             <telerik:RadComboBoxItem runat="server" Text="15-Prescott" Value="15" />
-                                           
+                                            
+                                            <telerik:RadComboBoxItem runat="server" Text="16-Flagstaff" Value="16" /> 
+
                                             <telerik:RadComboBoxItem runat="server" Text="17-Lake Havasu" Value="17" />
                                             <telerik:RadComboBoxItem runat="server" Text="18-Show Low" Value="18" />
                                             <telerik:RadComboBoxItem runat="server" Text="20-Henderson" Value="20" />
@@ -463,7 +466,7 @@
                                     
                                     <telerik:RadComboBoxItem runat="server" Text="13-Odessa" Value="13" />
                                     <telerik:RadComboBoxItem runat="server" Text="15-Prescott" Value="15" />
-                                   
+                                    <telerik:RadComboBoxItem runat="server" Text="16-Flagstaff" Value="16" /> 
                                     <telerik:RadComboBoxItem runat="server" Text="17-Lake Havasu" Value="17" />
                                     <telerik:RadComboBoxItem runat="server" Text="18-Show Low" Value="18" />
                                     <telerik:RadComboBoxItem runat="server" Text="20-Henderson" Value="20" />
