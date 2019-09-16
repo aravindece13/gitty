@@ -1,0 +1,17 @@
+﻿<%@ Master Language="VB" MasterPageFile="~/MasterPages/Site.master" AutoEventWireup="false" CodeFile="Purchasing.master.vb" Inherits="MasterPages_Purchasing" %>
+<%@ Register Src="~/Controls/deptNav_Purchasing.ascx" TagName="PurchasingMenuNav" TagPrefix="uc1" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
+    <asp:ContentPlaceHolder id="HeaderContentPlaceHolder" runat="server">
+            
+    </asp:ContentPlaceHolder>
+</asp:Content>
+
+
+<asp:Content ID="Content2" ContentPlaceHolderID="BodyContentPlaceHolder" Runat="Server">
+    <%-- <uc1:PurchasingMenuNav runat="server" />  --%>  
+        <asp:ContentPlaceHolder id="BodyContentPlaceHolder" runat="server">
+            
+        </asp:ContentPlaceHolder> 
+
+</asp:Content>
+

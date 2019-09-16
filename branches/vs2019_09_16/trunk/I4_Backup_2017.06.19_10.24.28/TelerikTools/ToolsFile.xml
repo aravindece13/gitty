@@ -1,0 +1,17 @@
+﻿<?xml version ="1.0" encoding ="utf-8" ?>
+
+<root>
+  <tools>
+    <Tool Name="Copy" ShowIcon="true" />
+    <Tool Name="Paste" ShowIcon="true" />
+    <Tool Name="PasteFromWord" ShowIcon="true" />
+    <Tool Name="Bold" ShowIcon="true" />
+    <Tool Name="Italic" ShowIcon="true" />
+    <Tool Name="Underline" ShowIcon="true" />
+    <Tool Name="LinkManager" ShowIcon="true" />
+    <Tool Name="Indent" ShowIcon="true" />
+    <Tool Name="Outdent" ShowIcon="true" />
+    <Tool Name="AjaxSpellCheck" ShowIcon="true" />
+    
+  </tools>
+</root>
