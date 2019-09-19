@@ -54,7 +54,7 @@ Partial Class Reports2_Quote_Comparison_TakeOff
             ReportViewer1.ProcessingMode = ProcessingMode.Remote
 
             ' Set report server and report path
-            ReportViewer1.ServerReport.ReportServerUrl = New Uri("http://srv-sql:80/ReportServer/")
+            ReportViewer1.ServerReport.ReportServerUrl = New Uri("http://srv-sql3:80/ReportServer/")
             ReportViewer1.ServerReport.ReportPath = "/Quote/Comparison_TakeOff"
 
             Dim pinfo As ReportParameterInfoCollection

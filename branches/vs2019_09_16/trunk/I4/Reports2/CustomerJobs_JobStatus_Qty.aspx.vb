@@ -50,7 +50,7 @@ Partial Class Reports2_CustomerJobs_JobStatus_Qty
             ReportViewer1.ProcessingMode = ProcessingMode.Remote
 
             ' Set report server and report path
-            ReportViewer1.ServerReport.ReportServerUrl = New Uri("http://srv-sql:80/ReportServer/")
+            ReportViewer1.ServerReport.ReportServerUrl = New Uri("http://srv-sql3:80/ReportServer/")
             ReportViewer1.ServerReport.ReportPath = "/Customers/JobStatus_Qty"
 
             Dim pinfo As ReportParameterInfoCollection

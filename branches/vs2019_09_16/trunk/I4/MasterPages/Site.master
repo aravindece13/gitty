@@ -1,4 +1,5 @@
-﻿<%@ Master Language="VB" CodeFile="Site.master.vb" Inherits="MasterPages_Site"  %>
+﻿<!--Trace=True -->
+<%@ Master Language="VB" CodeFile="Site.master.vb" Inherits="MasterPages_Site"  %>
 <%@ Register TagPrefix="telerik" Namespace="Telerik.Web.UI" Assembly="Telerik.Web.UI" %>
 <%@ Register TagPrefix="customControls" tagName="SiteMasterNav" src="~/Controls/SiteMasterNav.ascx"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">

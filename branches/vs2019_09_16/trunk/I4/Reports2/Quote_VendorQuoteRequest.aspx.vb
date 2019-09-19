@@ -55,7 +55,7 @@ Partial Class Reports2_Quote_VendorQuoteRequest
             ReportViewer1.ProcessingMode = ProcessingMode.Remote
 
             ' Set report server and report path
-            ReportViewer1.ServerReport.ReportServerUrl = New Uri("http://srv-sql:80/ReportServer/")
+            ReportViewer1.ServerReport.ReportServerUrl = New Uri("http://srv-sql3:80/ReportServer/")
             ReportViewer1.ServerReport.ReportPath = "/Quote/VendorQuoteRequest"
 
             Dim pinfo As ReportParameterInfoCollection

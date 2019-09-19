@@ -56,7 +56,7 @@ Partial Class Reports2_IT_IntranetProfiles
             ReportViewer1.ProcessingMode = ProcessingMode.Remote
 
             ' Set report server and report path
-            ReportViewer1.ServerReport.ReportServerUrl = New Uri("http://srv-sql:80/ReportServer/")
+            ReportViewer1.ServerReport.ReportServerUrl = New Uri("http://srv-sql3:80/ReportServer/")
             ReportViewer1.ServerReport.ReportPath = "/IT/IntranetProfiles_AppServ2"
 
             'Dim pinfo As ReportParameterInfoCollection

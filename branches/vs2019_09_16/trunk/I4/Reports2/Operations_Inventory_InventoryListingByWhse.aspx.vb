@@ -12,7 +12,7 @@ Partial Class Reports2_Operations_Inventory_InventoryListingByWhse
 
 
         ' Set report server and report path
-        ReportViewer1.ServerReport.ReportServerUrl = New Uri("http://srv-sql:80/ReportServer/")
+        ReportViewer1.ServerReport.ReportServerUrl = New Uri("http://srv-sql3:80/ReportServer/")
         ReportViewer1.ServerReport.ReportPath = "/Operations/Inventory/InventoryListing_Whse"
 
         

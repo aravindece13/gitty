@@ -27,7 +27,7 @@ Partial Class Reports2_Orders_ShipVia
      
 
     Protected Sub ReportViewer1_Load(sender As Object, e As System.EventArgs) Handles ReportViewer1.Load
-        ReportViewer1.ServerReport.ReportServerUrl = New Uri("http://srv-sql:80/ReportServer/")
+        ReportViewer1.ServerReport.ReportServerUrl = New Uri("http://srv-sql3:80/ReportServer/")
         ReportViewer1.ServerReport.ReportPath = "/Orders/ShipVia"
     End Sub
 End Class

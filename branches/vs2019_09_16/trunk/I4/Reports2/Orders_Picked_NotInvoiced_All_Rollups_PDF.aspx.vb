@@ -37,7 +37,7 @@ Partial Class Reports2_Orders_Picked_NotInvoiced_All_Rollups_PDF
             ReportViewer1.ProcessingMode = ProcessingMode.Remote
 
             ' Set report server and report path
-            ReportViewer1.ServerReport.ReportServerUrl = New Uri("http://srv-sql:80/ReportServer/")
+            ReportViewer1.ServerReport.ReportServerUrl = New Uri("http://srv-sql3:80/ReportServer/")
             ReportViewer1.ServerReport.ReportPath = "/Orders/Picked_NotInvoiced_All_Rollups_PDF"
 
             ' Process and render the report

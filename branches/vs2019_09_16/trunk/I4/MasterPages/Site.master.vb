@@ -18,10 +18,6 @@ Partial Class MasterPages_Site
 
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
 
-
-
-
-
         'Retrieve User name, remove the domain name, and set in the cookie object
 
         Dim UserName = My.User.Name.ToString()
@@ -39,8 +35,9 @@ Partial Class MasterPages_Site
 
         Dim IntranetPersonalizationConnectionString As String = WebConfigurationManager.ConnectionStrings("IntranetAppServices").ConnectionString
         Dim myIPConnection As New SqlConnection(IntranetPersonalizationConnectionString)
-        Dim selectCMD1 As SqlCommand = New SqlCommand("uspIntranetPersonalizationGet", myIPConnection)
-        selectCMD1.CommandType = CommandType.StoredProcedure
+        Dim selectCMD1 As SqlCommand = New SqlCommand("uspIntranetPersonalizationGet", myIPConnection) With {
+            .CommandType = CommandType.StoredProcedure
+        }
         selectCMD1.Parameters.Add("@UserName", SqlDbType.NVarChar).Value = UserName
         selectCMD1.Parameters.Add("@Status", SqlDbType.NVarChar).Value = "Active"
 

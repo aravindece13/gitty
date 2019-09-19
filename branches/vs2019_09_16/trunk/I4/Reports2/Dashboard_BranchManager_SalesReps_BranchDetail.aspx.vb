@@ -33,7 +33,7 @@ Partial Class Reports2_Dashboard_BranchManager_SalesReps_BranchDetail
             ReportViewer1.ProcessingMode = ProcessingMode.Remote
 
             ' Set report server and report path
-            ReportViewer1.ServerReport.ReportServerUrl = New Uri("http://srv-sql:80/ReportServer/")
+            ReportViewer1.ServerReport.ReportServerUrl = New Uri("http://srv-sql3:80/ReportServer/")
             ReportViewer1.ServerReport.ReportPath = "/Dashboards/BranchManager_SalesReps_BranchDetail"
 
             Dim pinfo As ReportParameterInfoCollection

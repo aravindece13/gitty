@@ -1,4 +1,4 @@
-﻿Imports Telerik.Reporting.ReportCollection
+﻿Imports Telerik.Reporting.ReportSourceCollection 'changed 2019-09-18 by SRS per warning
 Imports Telerik.ReportViewer.WebForms
 
 

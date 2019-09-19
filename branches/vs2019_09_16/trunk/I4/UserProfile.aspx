@@ -121,7 +121,7 @@
                 </div>
         </div>
         <div style="width:775px; margin:10px;">
-            <p style="color:#4c68a2; font-size:small; font-weight:bolder;">Please contact Derek Johnson  if you feel that any of your Intranet Personalization information is incorrect.</p>
+            <p style="color:#4c68a2; font-size:small; font-weight:bolder;">Please contact Support if you feel that any of your Intranet Personalization information is incorrect.</p>
         </div>
        
     

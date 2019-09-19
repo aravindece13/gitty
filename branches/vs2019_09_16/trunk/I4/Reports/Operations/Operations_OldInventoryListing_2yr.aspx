@@ -2,7 +2,8 @@
 <%@ Page Language="VB" MasterPageFile="~/MasterPages/Popups.master" AutoEventWireup="false" CodeFile="Operations_OldInventoryListing_2yr.aspx.vb" Inherits="Reports_Operations_Operations_OldInventoryListing_2yr" title="Untitled Page" %>
 
 
-<%@ Register Assembly="Telerik.ReportViewer.WebForms, Version=8.2.14.1204, Culture=neutral, PublicKeyToken=a9d7983dfcc261be" Namespace="Telerik.ReportViewer.WebForms" TagPrefix="telerik" %>
+
+<%@ Register Assembly="Telerik.ReportViewer.WebForms, Version=13.1.19.618, Culture=neutral, PublicKeyToken=a9d7983dfcc261be" Namespace="Telerik.ReportViewer.WebForms" TagPrefix="telerik" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
 
