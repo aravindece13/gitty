@@ -300,7 +300,11 @@
                         <div style="width:340px; float:left;">
                             <telerik:RadButton ID="lnk401WFTools" ButtonType="LinkButton" runat="server" Skin="BlackMetroTouch" Width="300px" Text="Wells Fargo Online Tools Demo" NavigateUrl="http://lp.mycustomemail.com/Retirement-Plan-RIE/wf4407875" Target="_blank"></telerik:RadButton>
                         </div>
-                      
+
+                        
+                        <div style="width:340px; float:left;padding-top:20px;">
+                            <telerik:RadButton ID="lnkWellsFargoFeeDisclosureInfo" ButtonType="LinkButton" runat="server" Skin="BlackMetroTouch" Width="300px" Text="Wells Fargo Fee Disclosures" NavigateUrl="1_WF440787%20Fee%20Disclosure%20information%209.2019%20(1).pdf" Target="_blank"></telerik:RadButton>
+                        </div>
                       </div>
         
                 </div>        	  
