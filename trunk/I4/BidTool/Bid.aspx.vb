@@ -4261,7 +4261,7 @@ Partial Class BidTool_Bid
         'mMailMessage.To.Add(New MailAddress("smitchell@danakepner.com"))
         'Dim eMailTo As String = "devadmin@danakepner.com"
 
-        Dim eMailTo As String = "smitchell@danakepner.com, tburton@danakepner.com"
+        Dim eMailTo As String = "smitchell@danakepner.com, amckenna@danakepner.com"
         mMailMessage.To.Add(eMailTo)
         mMailMessage.CC.Add(Request.Cookies("eMail").Value.ToString())
 
