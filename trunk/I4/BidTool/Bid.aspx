@@ -1486,16 +1486,19 @@
                                         Cover Page - Visible to Customer
                                     </div> 
                                     <div style="width:800px; height:220px;"> 
-                                        <telerik:RadEditor ID="editQuoteComment1" runat="server" Width="800px" Height="216px" Font-Size="Medium" NewLineMode="Br" ContentFilters="PdfExportFilter" SkinID="MetroTouch" >
+                                        <telerik:RadEditor ID="editQuoteComment1" runat="server" Width="800px" 
+                                            Height="216px" Font-Size="Medium" NewLineMode="Br" 
+                                            ContentFilters="PdfExportFilter" SkinID="MetroTouch" AllowScripts="True" 
+                                            NewLineBr="False" >
                                                 <Tools>
                                                     <telerik:EditorToolGroup >
                                                         <telerik:EditorTool Name="Cut" />
                                                         <telerik:EditorTool Name="Copy" />
                                                         <telerik:EditorTool Name="Paste" />
                                                         <telerik:EditorTool Name="Bold" />
-                                                        <%--<telerik:EditorTool Name="Underline" />
-                                                        <telerik:EditorTool Name="StrikeThrough" />
-                                                        <telerik:EditorTool Name="ForeColor" />--%>
+                                                        <telerik:EditorTool Name="Underline" />
+                                                        <telerik:EditorTool Name="Italic" />
+                                                        <telerik:EditorTool Name="ForeColor" />
                                                         <telerik:EditorTool Name="FontSize" />
                                                         <telerik:EditorTool Name="Undo" />
                                                         <telerik:EditorTool Name="Redo" />
@@ -4076,6 +4079,8 @@
                                                             width="700px" Height="530px" AllowSorting="True" Font-Size="Small" 
                                                           ResolvedRenderMode="Classic"  >
                          
+                                                          <GroupingSettings CollapseAllTooltip="Collapse all groups" />
+                         
                                                         <ClientSettings EnableRowHoverStyle="true" AllowKeyboardNavigation="true" >
                                                             
                                                             <KeyboardNavigationSettings EnableKeyboardShortcuts="true" AllowSubmitOnEnter="true"  />
@@ -4084,47 +4089,47 @@
                                                             <Scrolling AllowScroll="true" SaveScrollPosition="true" UseStaticHeaders="True" FrozenColumnsCount="0" ScrollHeight="400px" />        
                                                         </ClientSettings>
                         
-                                                            <MasterTableView AutoGenerateColumns="False" DataKeyNames="DetailIDIndex,ProdID" DataSourceID="SqlDS_grdSubsectionDetail" 
-                                                                    AllowAutomaticUpdates="true" AllowAutomaticDeletes="false" CommandItemDisplay="Top" EditMode="Batch" >
+                                                            <MasterTableView AutoGenerateColumns="False" DataKeyNames="DetailIDIndex" DataSourceID="SqlDS_grdSubsectionDetail" 
+                                                                    AllowAutomaticUpdates="true" AllowAutomaticDeletes="false" 
+                                                              CommandItemDisplay="Top" EditMode="Batch" >
                                                     
                                                                  <BatchEditingSettings EditType="Cell" OpenEditingEvent="Click" />
                        
                                                                     <Columns>
-                                                                        <telerik:GridBoundColumn DataField="Line" DataType="System.Int32" SortExpression="Line" UniqueName="Line" ReadOnly="true">
-                                                                            <HeaderStyle Width="20px" />
-                                                                            <ItemStyle Width="20px" Font-Size="Small" HorizontalAlign="Right" VerticalAlign="Top" />
+                                                                        <telerik:GridBoundColumn DataField="DetailIDIndex" DataType="System.Int64" 
+                                                                            SortExpression="DetailIDIndex" UniqueName="DetailIDIndex" ReadOnly="true" 
+                                                                            FilterControlAltText="Filter DetailIDIndex column" HeaderText="DetailIDIndex">
                            
                                                                         </telerik:GridBoundColumn>
-                                                                        <telerik:GridBoundColumn DataField="ProdID" HeaderText="ProdID" SortExpression="ProdID" UniqueName="ProdID" ReadOnly="true">
-                                                                            <HeaderStyle Width="140px" Font-Size="Small" />
-                                                                            <ItemStyle Width="140px" Font-Size="Small" HorizontalAlign="Left" VerticalAlign="Top" />
+                                                                        <telerik:GridBoundColumn DataField="Line" HeaderText="Line" 
+                                                                            SortExpression="Line" UniqueName="Line" DataType="System.Int32" 
+                                                                            FilterControlAltText="Filter Line column">
                                                                         </telerik:GridBoundColumn>
-                                                                        <telerik:GridBoundColumn DataField="Description" HeaderText="Description" SortExpression="Description" UniqueName="Description" ReadOnly="true">
-                                                                            <HeaderStyle Width="300px" Font-Size="Small" />
-                                                                            <ItemStyle Width="300px" Font-Size="Small" HorizontalAlign="Left" VerticalAlign="Top" />
+                                                                        <telerik:GridBoundColumn DataField="ProdID" HeaderText="ProdID" 
+                                                                            SortExpression="ProdID" UniqueName="ProdID" 
+                                                                            FilterControlAltText="Filter ProdID column">
                                                                         </telerik:GridBoundColumn>
-                                                                        <telerik:GridTemplateColumn HeaderText="Qty" SortExpression="Qty" UniqueName="TemplateColumn" DataField="Qty">
-                                                                            <HeaderStyle Width="70px" Font-Size="Small" />
-                                                                            <ItemStyle Width="70px" Font-Size="Small" HorizontalAlign="Right" VerticalAlign="Top" />
-                                                                            <ItemTemplate>
-                                                                               <%--<div style="float:right;">--%> 
-                                                                                 <asp:Label runat="server" ID="lblQty" Font-Size="Small" Text='<%# Eval("Qty", "{0:N1}") %>'></asp:Label>
-                                                                               <%--</div>--%>
-                                                                            </ItemTemplate>
-                                                                            <EditItemTemplate>
-                                                                                <span>
-                                                                                    <telerik:RadNumericTextBox Width="50px" runat="server" ID="txtBoxQtyUpdate2" d  AutoCompleteType="Disabled" Font-Size="Small">
-                                                                                    </telerik:RadNumericTextBox>                               
-                                                                                </span>
-                                                                            </EditItemTemplate>
-                                                                        </telerik:GridTemplateColumn>
 
-                                                                        <telerik:GridBoundColumn DataField="SellUnit" HeaderText="Unit" SortExpression="SellUnit" UniqueName="SellUnit" ReadOnly="true">
-                                                                            <HeaderStyle Width="50px" Font-Size="Small" />
-                                                                            <ItemStyle Width="50px" Font-Size="Small" HorizontalAlign="Left" VerticalAlign="Top" />
+                                                                        <telerik:GridBoundColumn DataField="Description" HeaderText="Description" 
+                                                                            SortExpression="Description" UniqueName="Description" 
+                                                                            FilterControlAltText="Filter Description column">
                                                                         </telerik:GridBoundColumn>
                                                        
-                                                                        <telerik:GridBoundColumn DataField="DetailIDIndex" Visible="False" DataType="System.Int64" HeaderText="DetailIDIndex" ReadOnly="True" SortExpression="DetailIDIndex" UniqueName="DetailIDIndex">
+                                                                        <telerik:GridBoundColumn DataField="Qty" DataType="System.Decimal" 
+                                                                            HeaderText="Qty" SortExpression="Qty" UniqueName="Qty" 
+                                                                            FilterControlAltText="Filter Qty column">
+                                                                        </telerik:GridBoundColumn>
+                                                                        <telerik:GridBoundColumn DataField="SellUnit" 
+                                                                            FilterControlAltText="Filter SellUnit column" HeaderText="SellUnit" 
+                                                                            SortExpression="SellUnit" UniqueName="SellUnit">
+                                                                        </telerik:GridBoundColumn>
+                                                                        <telerik:GridBoundColumn DataField="FlagSpecial" DataType="System.Int32" 
+                                                                            FilterControlAltText="Filter FlagSpecial column" HeaderText="FlagSpecial" 
+                                                                            SortExpression="FlagSpecial" UniqueName="FlagSpecial">
+                                                                        </telerik:GridBoundColumn>
+                                                                        <telerik:GridBoundColumn DataField="Line2" 
+                                                                            FilterControlAltText="Filter Line2 column" HeaderText="Line2" ReadOnly="True" 
+                                                                            SortExpression="Line2" UniqueName="Line2">
                                                                         </telerik:GridBoundColumn>
                                                                     </Columns>
                                                                     <CommandItemSettings ShowAddNewRecordButton="false" ShowRefreshButton="false"  />
@@ -4429,15 +4434,17 @@
                                         <div style="float: left; width:550px; ">
                                             <asp:Panel ID="pnlEditSubsection2" runat="server" >
                                             <telerik:RadTabStrip ID="RadTabStrip2" runat="server" Skin="Metro" 
-                                                    MultiPageID="RadMultiPage3"  ResolvedRenderMode="Classic" >
+                                                    MultiPageID="RadMultiPage3"  ResolvedRenderMode="Classic" 
+                                                    SelectedIndex="6" >
                                                  <Tabs>
-                                                   <telerik:RadTab runat="server" Text="Grab List" PageViewID="GrabList" Selected="true"></telerik:RadTab>
+                                                   <telerik:RadTab runat="server" Text="Grab List" PageViewID="GrabList"></telerik:RadTab>
                                                    <telerik:RadTab runat="server" Text="Related" PageViewID="RelatedProducts" ></telerik:RadTab>
                                                    <telerik:RadTab runat="server" Text="Assemblies" PageViewID="Assemblies" ></telerik:RadTab>
                                                    <telerik:RadTab runat="server" Text="Stock Search" PageViewID="StockSearch" ></telerik:RadTab>
                                                    <telerik:RadTab runat="server" Text="NonStocks" PageViewID="NonStockList"></telerik:RadTab>
                                                    <telerik:RadTab runat="server" Text="Section Comments" PageViewID="SectionComments"></telerik:RadTab>
-                                                   <telerik:RadTab runat="server" Text="Subsection Comments" PageViewID="SubsectionComments" ></telerik:RadTab>
+                                                   <telerik:RadTab runat="server" Text="Subsection Comments" 
+                                                         PageViewID="SubsectionComments" Selected="True" ></telerik:RadTab>
                                                    <telerik:RadTab runat="server" Text="Subsection Copy" PageViewID="SubsectionCopy" ></telerik:RadTab>
                                                  </Tabs>                    
                                             </telerik:RadTabStrip>
