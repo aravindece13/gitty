@@ -1495,7 +1495,7 @@
                                                         <telerik:EditorTool Name="Bold" />
                                                         <%--<telerik:EditorTool Name="Underline" />
                                                         <telerik:EditorTool Name="StrikeThrough" />
-                                                        <telerik:EditorTool Name="ForeColor" />--%>
+                                                        <telerik:EditorTool Name="ForeColor" /> does not apply to PDF - do not use--%>
                                                         <telerik:EditorTool Name="FontSize" />
                                                         <telerik:EditorTool Name="Undo" />
                                                         <telerik:EditorTool Name="Redo" />
