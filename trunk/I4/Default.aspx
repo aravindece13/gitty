@@ -35,11 +35,7 @@
                     <telerik:AjaxUpdatedControl ControlID="lnkCDLBackGrnd" />
                 </UpdatedControls>
             </telerik:AjaxSetting>
-            <telerik:AjaxSetting AjaxControlID="lnkNewEmp">
-                <UpdatedControls>
-                    <telerik:AjaxUpdatedControl ControlID="lnkNewEmp" />
-                </UpdatedControls>
-            </telerik:AjaxSetting>
+
             <telerik:AjaxSetting AjaxControlID="lnkNewHireReq">
                 <UpdatedControls>
                     <telerik:AjaxUpdatedControl ControlID="lnkNewHireReq" />
@@ -330,9 +326,7 @@
                                 <div style="padding:4px 4px 4px 4px; width:160px; float:left;" >
                                       <telerik:RadButton ID="lnkNewHireReq" ButtonType="LinkButton" runat="server" Width="130px" Text="New Hire Request"  NavigateUrl="~/Information/Form_NewHireReq.pdf" Skin="BlackMetroTouch" Font-Size="X-Small" Target="_blank"></telerik:RadButton>
                                 </div> 
-                                <!--<div style="padding:4px 4px 4px 4px;width:160px; float:left;" >
-                                      <telerik:RadButton ID="lnkNewEmp" ButtonType="LinkButton" runat="server" Width="130px" Text="New Employee" NavigateUrl="~/Information/Form_NewEmployee.pdf" Skin="BlackMetroTouch" Font-Size="X-Small" Target="_blank"></telerik:RadButton>
-                                </div>-->
+
                                 <div style="padding:4px 4px 4px 4px;width:160px; float:left;" >
                                       <telerik:RadButton ID="lnkEmpStatusChange" ButtonType="LinkButton" runat="server" Width="130px" Text="Emp. Status Change" NavigateUrl="~/Information/Form_EmployeeStatusChange.pdf" Skin="BlackMetroTouch" Font-Size="X-Small" Target="_blank"></telerik:RadButton>
                                 </div>
