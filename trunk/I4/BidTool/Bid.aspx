@@ -45,9 +45,12 @@
         
         function grdCosting2RowDblClick(sender, eventArgs) {
                 window.radopen("Details_Cost.aspx?ProdID=" + eventArgs.getDataKeyValue("ProdID") + "&WhseID=" + document.getElementById('<%= hdnWhseID.ClientID %>').value + "&CustID=" + document.getElementById('<%= hdnCustID.ClientID %>').value + "&QuoteID=" + document.getElementById('<%= hdnQuoteID.ClientID %>').value, "grdPricing2CostDetals");
-            }
-        
-        
+        }
+
+        // Added 2020-02-07 for handling section and subsection delete confirmation 
+        function Clicking(sender, args) {
+                args.set_cancel(!window.confirm("Are you sure you want to PERMANENTLY DELETE this?  This action is not reversible."));
+        }
 
     </script>
 </telerik:RadCodeBlock>
@@ -3923,7 +3926,7 @@
                                         </telerik:RadTextBox>--%>
                                     </div>
                                     <div style="float:Right;width:200px;margin-right:50px;">
-                                        <telerik:RadButton ID="btnDeleteSection" runat="server" Text="Delete Section" Width="200px" Skin="Metro"></telerik:RadButton>
+                                        <telerik:RadButton ID="btnDeleteSection" runat="server" OnClientClicking="Clicking" Text="Delete Section" Width="200px" Skin="Metro"></telerik:RadButton>
                                     </div>
                                     <div style="float:Right; width:100%; margin-top:5px; font-size:medium; font-weight:bold; font-style:italic; color:Red;">
                                         (1) WARNING!  Deleting the Section <u>PERMANENTLY DELETES</u> all underlying Subsections and detail (line items, etc.) (2)The user cannot delete the last section.
@@ -3942,7 +3945,7 @@
                                         </telerik:RadTextBox>--%>
                                     </div>
                                     <div style="float:Right;width:200px;margin-right:50px;">
-                                        <telerik:RadButton ID="btnDeleteSubsection" runat="server" Text="Delete Subsection" Width="200px" Skin="Metro"></telerik:RadButton>
+                                        <telerik:RadButton ID="btnDeleteSubsection" runat="server" OnClientClicking="Clicking" Text="Delete Subsection" Width="200px" Skin="Metro"></telerik:RadButton>
                                     </div>
                                     <div style="float:left;width:100%; margin-top:5px; font-size:medium; font-weight:bold; font-style:italic; color:Red;">
                                         (1) WARNING! Deleting the Subsection <u>PERMANENTLY DELETES</u> detail (line items, etc.) (2)The last subsection in a section cannot be deleted.
