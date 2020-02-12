@@ -51,7 +51,7 @@
         function ClickingDeleteSection(sender, args) {
                 args.set_cancel(!window.confirm("Are you sure you want to PERMANENTLY delete this section?  This action is not reversible."));
         }
-        function ClickingDeleteSubection(sender, args) {
+        function ClickingDeleteSubsection(sender, args) {
                 args.set_cancel(!window.confirm("Are you sure you want to PERMANENTLY delete this subsection?  This action is not reversible."));
         }
 
