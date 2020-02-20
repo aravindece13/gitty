@@ -1,0 +1,196 @@
+<?xml version="1.0"?>
+<configuration>
+  <appSettings>
+    <add key="Telerik.EnableEmbeddedSkins" value="true" />
+    <add key="Telerik.EnableEmbeddedBaseStylesheet" value="true" />
+  <add key="Telerik.Skin" value="Metro" />
+  
+  
+    
+  </appSettings>
+  <location path="Telerik.Web.UI.WebResource.axd">
+    <system.web>
+      <authorization>
+        <allow users="*" />
+      </authorization>
+    </system.web>
+  </location>
+  <connectionStrings>
+    <remove name="LocalSqlServer" />
+    <add name="ADService" connectionString="LDAP://srv-dc01.danakepner.com/OU=DK,DC=danakepner,DC=com" />
+    <add name="DKConnectionString" connectionString="Data Source=SRV-SQL3;Initial Catalog=DK;Persist Security Info=True; User ID=readerwriter;Password=700Alcott" providerName="System.Data.SqlClient" />
+    <add name="SSISDBConnectionString" connectionString="Data Source=SRV-SQL3;Initial Catalog=SSISDB;Integrated Security=SSPI" providerName="System.Data.SqlClient" />
+    
+      <!--Keep the IntranetAppServices pointing to SRV-SQL as this is the only accurate source data. -->
+      <add name="IntranetAppServices" connectionString="Data Source=SRV-SQL;Initial Catalog=IntranetAppServices2;User ID=sa;Password=Manh0!e" providerName="System.Data.SqlClient" />
+   
+    <!--Disable InforLive as this goes away with CSD-->
+    <!--  <add name="InforLive" connectionString="Dsn=dkco;uid=SYSPROGRESS;host=srv-infor;port=7100;db=nxt;pwd=123" />-->
+    
+    <!--Disable KepnerReporting.My.MySettings.InforLive as this goes away with CSD-->
+    <!--<add name="KepnerReporting.My.MySettings.InforLive" connectionString="Dsn=dkco;uid=SYSPROGRESS;host=srv-infor;port=7100;db=nxt;pwd=123" providerName="System.Data.Odbc" />-->
+
+    <!--Keep the KepnerReporting.My.MySettings.DK pointing to SRV-SQL as this is the only accurate source data. -->
+    <add name="KepnerReporting.My.MySettings.DK" connectionString="Data Source=SRV-SQL;Initial Catalog=DK;Persist Security Info=True; User ID=sa;Password=Manh0!e" providerName="System.Data.SqlClient" />
+    
+    <!-- Disable KepnerReporting.My.MySettings.IntranetAppServices as NEW_WAREHOUSE hasn't existed for years. -->
+    <!--<add name="KepnerReporting.My.MySettings.IntranetAppServices" connectionString="Data Source=NEW_WAREHOUSE;Initial Catalog=IntranetAppServices;Persist Security Info=True; User ID=sa;Password=Manh0!e" providerName="System.Data.SqlClient" />-->
+
+      <!--Disable Infor_Production as this goes away with CSD-->
+      <!--<add name="Infor_Production" connectionString="Dsn=dkco;uid=SYSPROGRESS;host=srv-infor;port=7100;db=nxt;pwd=123" />-->
+      
+      <!--Disable Infor_Production as this goes away with CSD.  It was already disabled anyway by DEJ. -->    
+      <!--<add name="Infor_Production" connectionString="DSN=dkco;Host=srv-infor;db=nxt;uid=sysprogress;pwd=123;port=7100;"/>-->
+  </connectionStrings>
+  <system.web>
+    <customErrors mode="Off">
+      <error statusCode="401" redirect="~/AccessDenied.aspx" />
+      <error statusCode="402" redirect="~/ErrorHandler.aspx" />
+      <error statusCode="404" redirect="~/ErrorHandler.aspx" />
+    </customErrors>
+    <trace enabled="true" requestLimit="500" pageOutput="false" traceMode="SortByTime" />
+    <!-- 
+      The following article is a good reference for authentication
+      ihttp://www.codeproject.com/Articles/94612/Windows-Authentication
+    -->
+    <roleManager enabled="true">
+      <providers>
+        <remove name="AspNetSqlRoleProvider" />
+        <add connectionStringName="IntranetAppServices" applicationName="Intranet3"
+          name="AspNetSqlRoleProvider" type="System.Web.Security.SqlRoleProvider" />
+        <remove name="AspNetWindowsTokenRoleProvider" />
+        <add applicationName="Intranet3" name="AspNetWindowsTokenRoleProvider"
+          type="System.Web.Security.WindowsTokenRoleProvider" />
+      </providers>
+    </roleManager>
+    <membership defaultProvider="AspNetActiveDirectoryMembershipProvider">
+      <providers>
+        <clear />
+        <add connectionStringName="ADService" connectionUsername="kepner\admindev" connectionPassword="dkp1p3" enableSearchMethods="true" attributeMapUsername="sAMAccountName" name="AspNetActiveDirectoryMembershipProvider" applicationName="Intranet3" type="System.Web.Security.ActiveDirectoryMembershipProvider,System.Web,Version=2.0.3600.0,Culture=neutral,PublicKeyToken=b03f5f7f11d50a3a" />
+      </providers>
+    </membership>
+    <compilation debug="true" strict="false" explicit="true" targetFramework="4.0">
+      <assemblies>
+        <add assembly="Telerik.Reporting" />
+        <add assembly="Telerik.Reporting.Adomd" />
+        <add assembly="Telerik.Reporting.Cache.Database" />
+        <add assembly="Telerik.Reporting.OpenXmlRendering" />
+        <add assembly="Telerik.Reporting.Service" />
+        <add assembly="Telerik.Reporting.XpsRendering" />
+        <add assembly="Telerik.ReportViewer.WebForms" />
+        <add assembly="Telerik.ReportViewer.WinForms" />
+        <add assembly="Telerik.ReportViewer.Wpf" />
+        <!--<add assembly="Telerik.Web.Design" />-->
+        <add assembly="Telerik.Web.UI.Skins" />
+        <add assembly="Telerik.Web.UI" />
+        <add assembly="Microsoft.ReportViewer.WebForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=B03F5F7F11D50A3A" />
+        <add assembly="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=B03F5F7F11D50A3A" />
+        <add assembly="Microsoft.Build.Framework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=B03F5F7F11D50A3A" />
+        <add assembly="System.Management, Version=4.0.0.0, Culture=neutral, PublicKeyToken=B03F5F7F11D50A3A" />
+        <add assembly="System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=B03F5F7F11D50A3A" />
+        <add assembly="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=B77A5C561934E089" />
+        <add assembly="System.Speech, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31BF3856AD364E35" />
+        <!--<add assembly="Telerik.Web.Design, Version=2013.2.611.40, Culture=neutral, PublicKeyToken=121FAE78165BA3D4" />-->
+        <add assembly="Telerik.Web.Design, Version=2014.3.1209.40, Culture=neutral, PublicKeyToken=121FAE78165BA3D4" />
+      </assemblies>
+      <buildProviders>
+        <add extension=".rdlc" type="Microsoft.Reporting.RdlBuildProvider, Microsoft.ReportViewer.WebForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+      </buildProviders>
+    </compilation>
+    <pages controlRenderingCompatibilityVersion="4.0" clientIDMode="AutoID">
+      <namespaces>
+        <clear />
+        <add namespace="System" />
+        <add namespace="System.Collections" />
+        <add namespace="System.Collections.Generic" />
+        <add namespace="System.Collections.Specialized" />
+        <add namespace="System.Configuration" />
+        <add namespace="System.Text" />
+        <add namespace="System.Text.RegularExpressions" />
+        <add namespace="System.Linq" />
+        <add namespace="System.Xml.Linq" />
+        <add namespace="System.Web" />
+        <add namespace="System.Web.Caching" />
+        <add namespace="System.Web.SessionState" />
+        <add namespace="System.Web.Security" />
+        <add namespace="System.Web.Profile" />
+        <add namespace="System.Web.UI" />
+        <add namespace="System.Web.UI.WebControls" />
+        <add namespace="System.Web.UI.WebControls.WebParts" />
+        <add namespace="System.Web.UI.HtmlControls" />
+        <add namespace="Telerik.Web.UI" />
+        <add namespace="Telerik.Web.Design" />
+        <add namespace="Telerik.Web.UI.Skins" />
+        <add namespace="Microsoft.Reporting.WebForms" />
+      </namespaces>
+      <controls>
+        <add tagPrefix="telerik" namespace="Telerik.Web.UI" assembly="Telerik.Web.UI" />
+        <add tagPrefix="testControls" tagName="SiteMasterNav1" src="~/Controls/test.ascx" />
+        <add tagPrefix="customControls" tagName="SiteMasterNav" src="~/Controls/SiteMasterNav.ascx" />
+        <add tagPrefix="RSWEB" namespace="Microsoft.Reporting.WebForms" assembly="Microsoft.ReportViewer.WebForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=B03F5F7F11D50A3A" />
+      </controls>
+    </pages>
+    <httpHandlers>
+      <add path="ChartImage.axd" type="Telerik.Web.UI.ChartHttpHandler" verb="*" validate="false" />
+      <add path="Telerik.Web.UI.DialogHandler.aspx" type="Telerik.Web.UI.DialogHandler" verb="*" validate="false" />
+      <add path="Telerik.Web.UI.SpellCheckHandler.axd" type="Telerik.Web.UI.SpellCheckHandler" verb="*" validate="false" />
+      <add path="Telerik.RadUploadProgressHandler.ashx" type="Telerik.Web.UI.RadUploadProgressHandler" verb="*" validate="false" />
+      <add path="Telerik.Web.UI.WebResource.axd" type="Telerik.Web.UI.WebResource" verb="*" validate="false" />
+      <add path="Telerik.ReportViewer.axd" verb="*" type="Telerik.ReportViewer.WebForms.HttpHandler, Telerik.ReportViewer.WebForms" />
+      <add path="Reserved.ReportViewerWebControl.axd" verb="*" type="Microsoft.Reporting.WebForms.HttpHandler, Microsoft.ReportViewer.WebForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" validate="false" />
+    </httpHandlers>
+    <httpModules>
+      <add name="RadUploadModule" type="Telerik.Web.UI.RadUploadHttpModule" />
+      <add name="RadCompression" type="Telerik.Web.UI.RadCompression" />
+    </httpModules>
+    <httpRuntime maxRequestLength="102400" executionTimeout="3600" />
+  </system.web>
+  <system.webServer>
+    <validation validateIntegratedModeConfiguration="false" />
+    <modules runAllManagedModulesForAllRequests="true">
+      <remove name="RadUploadModule" />
+      <remove name="RadCompression" />
+      <add name="RadUploadModule" type="Telerik.Web.UI.RadUploadHttpModule" preCondition="integratedMode" />
+      <add name="RadCompression" type="Telerik.Web.UI.RadCompression" preCondition="integratedMode" />
+    </modules>
+    <handlers>
+      <remove name="WebServiceHandlerFactory-Integrated" />
+      <remove name="ScriptHandlerFactory" />
+      <remove name="ScriptHandlerFactoryAppServices" />
+      <remove name="ScriptResource" />
+      <add name="ScriptHandlerFactory" verb="*" path="*.asmx" preCondition="integratedMode" type="System.Web.Script.Services.ScriptHandlerFactory, System.Web.Extensions, Version=4.0.30319.272, Culture=neutral, PublicKeyToken=31BF3856AD364E35" />
+      <add name="ScriptHandlerFactoryAppServices" verb="*" path="*_AppService.axd" preCondition="integratedMode" type="System.Web.Script.Services.ScriptHandlerFactory, System.Web.Extensions, Version=4.0.30319.272, Culture=neutral, PublicKeyToken=31BF3856AD364E35" />
+      <add name="ScriptResource" preCondition="integratedMode" verb="GET,HEAD" path="ScriptResource.axd" type="System.Web.Handlers.ScriptResourceHandler, System.Web.Extensions, Version=4.0.30319.272, Culture=neutral, PublicKeyToken=31BF3856AD364E35" />
+      <remove name="ChartImage_axd" />
+      <remove name="Telerik_Web_UI_SpellCheckHandler_axd" />
+      <remove name="Telerik_Web_UI_DialogHandler_aspx" />
+      <remove name="Telerik_RadUploadProgressHandler_ashx" />
+      <remove name="Telerik_Web_UI_WebResource_axd" />
+      <add name="Ajax" verb="POST,GET" path="ajax/*.ashx" type="Ajax.PageHandlerFactory, Ajax" />
+      <add name="ChartImage_axd" path="ChartImage.axd" type="Telerik.Web.UI.ChartHttpHandler" verb="*" preCondition="integratedMode" />
+      <add name="Telerik_Web_UI_SpellCheckHandler_axd" path="Telerik.Web.UI.SpellCheckHandler.axd" type="Telerik.Web.UI.SpellCheckHandler" verb="*" preCondition="integratedMode" />
+      <add name="Telerik_Web_UI_DialogHandler_aspx" path="Telerik.Web.UI.DialogHandler.aspx" type="Telerik.Web.UI.DialogHandler" verb="*" preCondition="integratedMode" />
+      <add name="Telerik_RadUploadProgressHandler_ashx" path="Telerik.RadUploadProgressHandler.ashx" type="Telerik.Web.UI.RadUploadProgressHandler" verb="*" preCondition="integratedMode" />
+      <add name="Telerik_Web_UI_WebResource_axd" path="Telerik.Web.UI.WebResource.axd" type="Telerik.Web.UI.WebResource" verb="*" preCondition="integratedMode" />
+      <add name="ReportViewerWebControlHandler" preCondition="integratedMode" verb="*" path="Reserved.ReportViewerWebControl.axd" type="Microsoft.Reporting.WebForms.HttpHandler, Microsoft.ReportViewer.WebForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+      <add name="Telerik.ReportViewer.axd_*" type="Telerik.ReportViewer.WebForms.HttpHandler, Telerik.ReportViewer.WebForms, Version=8.2.14.1204, Culture=neutral, PublicKeyToken=a9d7983dfcc261be" path="Telerik.ReportViewer.axd" verb="*" preCondition="integratedMode" />
+    </handlers>
+    <security>
+      <requestFiltering>
+        <requestLimits maxAllowedContentLength="104857600" />
+      </requestFiltering>
+    </security>
+    <staticContent>
+      <mimeMap fileExtension=".mp4" mimeType="video/mp4" />
+      <mimeMap fileExtension=".ogv" mimeType="video/ogg" />
+      <mimeMap fileExtension=".webm" mimeType="video/webm" />
+    </staticContent>
+  </system.webServer>
+  <system.net>
+    <mailSettings>
+      <smtp from="devadmin@danakepner.com">
+        <network defaultCredentials="false" host="srv-exchange10.danakepner.com" userName="dejohnson" />
+      </smtp>
+    </mailSettings>
+  </system.net>
+</configuration>
