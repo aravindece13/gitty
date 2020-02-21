@@ -4244,6 +4244,7 @@ Partial Class BidTool_Bid
 
         Catch err As Exception
             ' Handle an error by displaying the information
+            MsgBox(err.Message & Chr(13) & Chr(10) & "Please send a screenshot to helpdesk. Failure executing uspQuoteServiceRequest2: " & Chr(13) & Chr(10) & updateCMD1.CommandText & Chr(13) & Chr(10) & " with result code: " & updated)
 
         Finally
             'Either way, make sure the connection is properly closed
@@ -4261,6 +4262,8 @@ Partial Class BidTool_Bid
         'mMailMessage.To.Add(New MailAddress("smitchell@danakepner.com"))
         'Dim eMailTo As String = "devadmin@danakepner.com"
 
+        ' Dim eMailTo As String = "ssaari@danakepner.com"
+        ' CHANGED BACK TO THE FOLLOWING AFTER TESTING
         Dim eMailTo As String = "smitchell@danakepner.com, amckenna@danakepner.com"
         mMailMessage.To.Add(eMailTo)
         mMailMessage.CC.Add(Request.Cookies("eMail").Value.ToString())
