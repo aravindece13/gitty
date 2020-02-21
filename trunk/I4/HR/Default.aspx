@@ -34,11 +34,12 @@
                     <telerik:AjaxUpdatedControl ControlID="lnkNewHireReq" />
                 </UpdatedControls>
             </telerik:AjaxSetting>
+            <%-- 
             <telerik:AjaxSetting AjaxControlID="lnkNewEmp">
                 <UpdatedControls>
                     <telerik:AjaxUpdatedControl ControlID="lnkNewEmp" />
                 </UpdatedControls>
-            </telerik:AjaxSetting>
+            </telerik:AjaxSetting> --%>
             <telerik:AjaxSetting AjaxControlID="lnkEmployeeStatusChange">
                 <UpdatedControls>
                     <telerik:AjaxUpdatedControl ControlID="lnkEmployeeStatusChange" />
@@ -230,9 +231,10 @@
                     <div style="margin:4px 4px 4px 4px;width:240px; float:left;" >
                           <telerik:RadButton ID="lnkNewHireReq" ButtonType="LinkButton" runat="server" Skin="BlackMetroTouch" Width="200px" Text="New Hire Request" NavigateUrl="~/Information/Form_NewHireReq.pdf" Target="_blank"></telerik:RadButton>
                     </div>
-                    <div style="margin:4px 4px 4px 4px;width:240px; float:left;" >
+                    <%-- srs removed 2020-01-30 <div style="margin:4px 4px 4px 4px;width:240px; float:left;" >
                           <telerik:RadButton ID="lnkNewEmp" ButtonType="LinkButton" runat="server" Skin="BlackMetroTouch" Width="200px" Text="New Employee Data" NavigateUrl="~/Information/Form_NewEmployee.pdf" Target="_blank"></telerik:RadButton>
                     </div>
+                    --%>
                     <div style="margin:4px 4px 4px 4px;width:240px; float:left;" >
                           <telerik:RadButton ID="lnkEmployeeStatusChange" ButtonType="LinkButton" runat="server" Skin="BlackMetroTouch" Width="200px" Text="Status Change" NavigateUrl="~/Information/Form_EmployeeStatusChange.pdf" Target="_blank"></telerik:RadButton>
                     </div>
