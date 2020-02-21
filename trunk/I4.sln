@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "I4", "I4\", "{21BEC928-581B-4384-9A88-40BB86D33914}"
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "I4", "I4", "{21BEC928-581B-4384-9A88-40BB86D33914}"
 	ProjectSection(WebsiteProperties) = preProject
 		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
 		Debug.AspNetCompiler.VirtualPath = "/I4"
@@ -18,7 +18,7 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "I4", "I4\", "{21BEC928-581B
 		Release.AspNetCompiler.ForceOverwrite = "true"
 		Release.AspNetCompiler.FixedNames = "false"
 		Release.AspNetCompiler.Debug = "False"
-		VWDPort = "60747"
+		VWDPort = "63956"
 		DefaultWebSiteLanguage = "Visual Basic"
 	EndProjectSection
 EndProject
