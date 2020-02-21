@@ -316,173 +316,173 @@
                     </telerik:RadTabStrip>
                </div>
                <div id="divMultiPage1" style="float:left;">    
-                    <telerik:RadMultiPage ID="RadMultiPage1" runat="server" Height="140px"  Width="900px" BorderColor="Silver" BorderStyle="Solid" BorderWidth="1px" SelectedIndex="3">
+                    <telerik:RadMultiPage ID="RadMultiPage1" runat="server" Height="140"  Width="900px" BorderColor="Silver" BorderStyle="Solid" BorderWidth="1px" SelectedIndex="3">
     
                        <telerik:RadPageView ID="HR" runat="server"  > 
                                 <div style="padding:4px 4px 4px 4px;width:200px; float:left; " >
-                                      <telerik:RadButton ID="lnkHandbook" ButtonType="LinkButton" runat="server" Width="130px" Text="Employee Handbook" NavigateUrl="~/HR/EmployeeManual_2018.pdf" Skin="BlackMetroTouch" Font-Size="X-Small" Target="_blank"></telerik:RadButton>
+                                      <telerik:RadButton ID="lnkHandbook" ButtonType="LinkButton" runat="server" Width="195px" Text="Employee Handbook" NavigateUrl="~/HR/EmployeeManual_2018.pdf" Skin="BlackMetroTouch" Font-Size="X-Small" Target="_blank"></telerik:RadButton>
                                 </div>
                                 <div style="padding:4px 4px 4px 4px;width:200px; float:left; " >
-                                      <telerik:RadButton ID="lnkBackGrndCheck" ButtonType="LinkButton" runat="server" Width="130px" Text="Background Check" NavigateUrl="~/Information/Form_BackgroundCheck.pdf" Skin="BlackMetroTouch" Font-Size="X-Small" Target="_blank"></telerik:RadButton>
+                                      <telerik:RadButton ID="lnkBackGrndCheck" ButtonType="LinkButton" runat="server" Width="195px" Text="Background Check" NavigateUrl="~/Information/Form_BackgroundCheck.pdf" Skin="BlackMetroTouch" Font-Size="X-Small" Target="_blank"></telerik:RadButton>
                                 </div>
                                 <div style="padding:4px 4px 4px 4px;width:200px; float:left; " >
-                                      <telerik:RadButton ID="lnkCDLBackGrnd" ButtonType="LinkButton" runat="server" Width="130px" Text="CDL Background Check" NavigateUrl="~/Information/Form_CDLBackgroundCheck.pdf" Skin="BlackMetroTouch" Font-Size="X-Small" Target="_blank"></telerik:RadButton>
+                                      <telerik:RadButton ID="lnkCDLBackGrnd" ButtonType="LinkButton" runat="server" Width="195px" Text="CDL Background Check" NavigateUrl="~/Information/Form_CDLBackgroundCheck.pdf" Skin="BlackMetroTouch" Font-Size="X-Small" Target="_blank"></telerik:RadButton>
                                 </div>
                                 <div style="padding:4px 4px 4px 4px; width:200px; float:left;" >
-                                      <telerik:RadButton ID="lnkApplication" ButtonType="LinkButton" runat="server" Width="130px" Text="Employment App"  NavigateUrl="~/Information/Form_EmploymentApp.pdf" Skin="BlackMetroTouch" Font-Size="X-Small" Target="_blank"></telerik:RadButton>
+                                      <telerik:RadButton ID="lnkApplication" ButtonType="LinkButton" runat="server" Width="195px" Text="Employment App"  NavigateUrl="~/Information/Form_EmploymentApp.pdf" Skin="BlackMetroTouch" Font-Size="X-Small" Target="_blank"></telerik:RadButton>
                                 </div>
                                 <div style="padding:4px 4px 4px 4px; width:200px; float:left;" >
-                                      <telerik:RadButton ID="lnkNewHireReq" ButtonType="LinkButton" runat="server" Width="130px" Text="New Hire Request"  NavigateUrl="~/Information/Form_NewHireReq.pdf" Skin="BlackMetroTouch" Font-Size="X-Small" Target="_blank"></telerik:RadButton>
+                                      <telerik:RadButton ID="lnkNewHireReq" ButtonType="LinkButton" runat="server" Width="195px" Text="New Hire Request"  NavigateUrl="~/Information/Form_NewHireReq.pdf" Skin="BlackMetroTouch" Font-Size="X-Small" Target="_blank"></telerik:RadButton>
                                 </div> 
 
                                 <div style="padding:4px 4px 4px 4px;width:200px; float:left;" >
-                                      <telerik:RadButton ID="lnkEmpStatusChange" ButtonType="LinkButton" runat="server" Width="130px" Text="Emp. Status Change" NavigateUrl="~/Information/Form_EmployeeStatusChange.pdf" Skin="BlackMetroTouch" Font-Size="X-Small" Target="_blank"></telerik:RadButton>
+                                      <telerik:RadButton ID="lnkEmpStatusChange" ButtonType="LinkButton" runat="server" Width="195px" Text="Emp. Status Change" NavigateUrl="~/Information/Form_EmployeeStatusChange.pdf" Skin="BlackMetroTouch" Font-Size="X-Small" Target="_blank"></telerik:RadButton>
                                 </div>
                                 <div style="padding:4px 4px 4px 4px;width:200px; float:left; " >
-                                     <telerik:RadButton ID="lnkEmpWarning" ButtonType="LinkButton" runat="server" Width="130px" Text="Employee Warning" NavigateUrl="~/Information/Form_EmployeeWarning.pdf" Skin="BlackMetroTouch" Font-Size="X-Small" Target="_blank"></telerik:RadButton>
+                                     <telerik:RadButton ID="lnkEmpWarning" ButtonType="LinkButton" runat="server" Width="195px" Text="Employee Warning" NavigateUrl="~/Information/Form_EmployeeWarning.pdf" Skin="BlackMetroTouch" Font-Size="X-Small" Target="_blank"></telerik:RadButton>
                                 </div>
-                                <div style="padding:4px 4px 4px 4px; width:160px; float:left;" >
-                                     <telerik:RadButton ID="lnkI9" ButtonType="LinkButton" runat="server" Width="130px" Text="I-9" NavigateUrl="~/Information/Form_I9.pdf" Target="_blank" Skin="BlackMetroTouch" Font-Size="X-Small" ></telerik:RadButton>
+                                <div style="padding:4px 4px 4px 4px; width:200px; float:left;" >
+                                     <telerik:RadButton ID="lnkI9" ButtonType="LinkButton" runat="server" Width="195px" Text="I-9" NavigateUrl="~/Information/Form_I9.pdf" Target="_blank" Skin="BlackMetroTouch" Font-Size="X-Small" ></telerik:RadButton>
                                 </div> 
                                 <div style="padding:4px 4px 4px 4px;width:200px; float:left;" >
-                                    <telerik:RadButton ID="lnkW4" ButtonType="LinkButton" runat="server" Width="130px" Text="W4 | Withholding" NavigateUrl="~/Information/Form_W4.pdf" Target="_blank" Skin="BlackMetroTouch" Font-Size="X-Small" ></telerik:RadButton>
+                                    <telerik:RadButton ID="lnkW4" ButtonType="LinkButton" runat="server" Width="195px" Text="W4 | Withholding" NavigateUrl="~/Information/Form_W4.pdf" Target="_blank" Skin="BlackMetroTouch" Font-Size="X-Small" ></telerik:RadButton>
                                 </div> 
                                
-                                <div style="padding:4px 4px 4px 4px;width:160px; float:left; " >
-                                     <telerik:RadButton ID="lnkHIPPA" ButtonType="LinkButton" runat="server" Width="130px" Text="HIPPA (2013)" NavigateUrl="~/Information/Form_HIPPA_Privacy.pdf" Skin="BlackMetroTouch" Font-Size="X-Small" Target="_blank"></telerik:RadButton>
+                                <div style="padding:4px 4px 4px 4px;width:200px; float:left; " >
+                                     <telerik:RadButton ID="lnkHIPPA" ButtonType="LinkButton" runat="server" Width="195px" Text="HIPPA (2013)" NavigateUrl="~/Information/Form_HIPPA_Privacy.pdf" Skin="BlackMetroTouch" Font-Size="X-Small" Target="_blank"></telerik:RadButton>
                                 </div>
 
                                 
-                                <div style="padding:4px 4px 4px 4px;width:160px; float:left; " >
-                                     <telerik:RadButton ID="lnkMVRrelease" ButtonType="LinkButton" runat="server" Width="130px" Text="MVR Release" NavigateUrl="~/HR/2020/PermissionforReleaseofMotorVehicleRecords.pdf" Skin="BlackMetroTouch" Font-Size="X-Small" Target="_blank"></telerik:RadButton>
+                                <div style="padding:4px 4px 4px 4px;width:200px; float:left; " >
+                                     <telerik:RadButton ID="lnkMVRrelease" ButtonType="LinkButton" runat="server" Width="195px" Text="MVR Release" NavigateUrl="~/HR/2020/PermissionforReleaseofMotorVehicleRecords.pdf" Skin="BlackMetroTouch" Font-Size="X-Small" Target="_blank"></telerik:RadButton>
                                 </div>
 
                 
                       </telerik:RadPageView>
                       <telerik:RadPageView ID="Inventory" runat="server" > 
        
-                            <div style="padding:4px 4px 4px 4px;width:160px; float:left; " >
-                                  <telerik:RadButton ID="lnkNewProductInv" ButtonType="LinkButton" runat="server" Width="130px" Text="New Product" NavigateUrl="~/Information/Form_NewProduct.pdf" Skin="BlackMetroTouch" Font-Size="X-Small" Target="_blank"></telerik:RadButton>
+                            <div style="padding:4px 4px 4px 4px;width:200px; float:left; " >
+                                  <telerik:RadButton ID="lnkNewProductInv" ButtonType="LinkButton" runat="server" width="195px" Text="New Product" NavigateUrl="~/Information/Form_NewProduct.pdf" Skin="BlackMetroTouch" Font-Size="X-Small" Target="_blank"></telerik:RadButton>
                             </div>
-                             <div style="padding:4px 4px 4px 4px; width:160px; float:left;" >
-                                  <telerik:RadButton ID="lnkStockReturnInv" ButtonType="LinkButton" runat="server" Width="130px" Text="Stock Return" NavigateUrl="~/Information/Form_StockReturn.pdf" Skin="BlackMetroTouch" Font-Size="X-Small" Target="_blank"></telerik:RadButton>
+                             <div style="padding:4px 4px 4px 4px; width:200px; float:left;" >
+                                  <telerik:RadButton ID="lnkStockReturnInv" ButtonType="LinkButton" runat="server" width="195px" Text="Stock Return" NavigateUrl="~/Information/Form_StockReturn.pdf" Skin="BlackMetroTouch" Font-Size="X-Small" Target="_blank"></telerik:RadButton>
                              </div>
-                             <div style="padding:4px 4px 4px 4px; width:160px; float:left;" >
-                                  <telerik:RadButton ID="lnkStockAdjustInv" ButtonType="LinkButton" runat="server" Width="130px" Text="Stock Adjust" NavigateUrl="~/Information/Form_StockAdjustments.pdf" Skin="BlackMetroTouch" Font-Size="X-Small" Target="_blank"></telerik:RadButton>
+                             <div style="padding:4px 4px 4px 4px; width:200px; float:left;" >
+                                  <telerik:RadButton ID="lnkStockAdjustInv" ButtonType="LinkButton" runat="server" width="195px" Text="Stock Adjust" NavigateUrl="~/Information/Form_StockAdjustments.pdf" Skin="BlackMetroTouch" Font-Size="X-Small" Target="_blank"></telerik:RadButton>
                              </div> 
-                             <div style="padding:4px 4px 4px 4px;width:160px; float:left;" >
-                                  <telerik:RadButton ID="lnkDamagedMatInv" ButtonType="LinkButton" runat="server" Width="130px" Text="Damaged Material" NavigateUrl="~/Information/Form_DamagedMaterial.pdf" Skin="BlackMetroTouch" Font-Size="X-Small" Target="_blank"></telerik:RadButton>
+                             <div style="padding:4px 4px 4px 4px;width:200px; float:left;" >
+                                  <telerik:RadButton ID="lnkDamagedMatInv" ButtonType="LinkButton" runat="server" width="195px" Text="Damaged Material" NavigateUrl="~/Information/Form_DamagedMaterial.pdf" Skin="BlackMetroTouch" Font-Size="X-Small" Target="_blank"></telerik:RadButton>
                              </div>
-                             <div style="margin:4px 4px 4px 4px; width:160px; float:left;" >
-                                 <telerik:RadButton ID="lnkUnavailInv" ButtonType="LinkButton" runat="server" Skin="BlackMetroTouch" Width="130px" Text="Unavail. Inventory" NavigateUrl="~/Information/Form_UnavailableInventory.pdf" Font-Size="X-Small" Target="_blank"></telerik:RadButton>
+                             <div style="margin:4px 4px 4px 4px; width:200px; float:left;" >
+                                 <telerik:RadButton ID="lnkUnavailInv" ButtonType="LinkButton" runat="server" Skin="BlackMetroTouch" width="195px" Text="Unavail. Inventory" NavigateUrl="~/Information/Form_UnavailableInventory.pdf" Font-Size="X-Small" Target="_blank"></telerik:RadButton>
                              </div>
-                             <div style="padding:4px 4px 4px 4px;width:160px; float:left;" >
-                                  <telerik:RadButton ID="lnkCapitalizedFreight" ButtonType="LinkButton" runat="server" Width="130px" Text="Capitalized Freight" NavigateUrl="~/Information/Form_CapitalizedFreight.PDF" Skin="BlackMetroTouch" Font-Size="X-Small" Target="_blank"></telerik:RadButton>
+                             <div style="padding:4px 4px 4px 4px;width:200px; float:left;" >
+                                  <telerik:RadButton ID="lnkCapitalizedFreight" ButtonType="LinkButton" runat="server" width="195px" Text="Capitalized Freight" NavigateUrl="~/Information/Form_CapitalizedFreight.PDF" Skin="BlackMetroTouch" Font-Size="X-Small" Target="_blank"></telerik:RadButton>
                              </div>
                       </telerik:RadPageView>
                        <telerik:RadPageView ID="IT" runat="server" > 
-                                 <div style="padding:4px 4px 4px 4px; width:160px; float:left;" >
-                                      <telerik:RadButton ID="lnkContactExts" ButtonType="LinkButton" runat="server" Width="130px" Text="Phone Ext." NavigateUrl="~/Reports2/Employees_Exts_ByBranch.aspx" Skin="BlackMetroTouch" Font-Size="X-Small" Target="_blank"></telerik:RadButton>
+                                 <div style="padding:4px 4px 4px 4px; width:220px; float:left;" >
+                                      <telerik:RadButton ID="lnkContactExts" ButtonType="LinkButton" runat="server" width="215px" Text="Phone Ext." NavigateUrl="~/Reports2/Employees_Exts_ByBranch.aspx" Skin="BlackMetroTouch" Font-Size="X-Small" Target="_blank"></telerik:RadButton>
                                  </div> 
-                                 <div style="padding:4px 4px 4px 4px; width:160px; float:left;" >
-                                      <telerik:RadButton ID="lnkContactListing" ButtonType="LinkButton" runat="server" Width="130px" Text="Contact Listing" NavigateUrl="~/Reports2/Employees_Contacts_ByBranch.aspx" Skin="BlackMetroTouch" Font-Size="X-Small" Target="_blank"></telerik:RadButton>
+                                 <div style="padding:4px 4px 4px 4px; width:220px; float:left;" >
+                                      <telerik:RadButton ID="lnkContactListing" ButtonType="LinkButton" runat="server" width="215px" Text="Contact Listing" NavigateUrl="~/Reports2/Employees_Contacts_ByBranch.aspx" Skin="BlackMetroTouch" Font-Size="X-Small" Target="_blank"></telerik:RadButton>
                                  </div> 
                                
-                                 <div style="padding:4px 4px 4px 4px; width:160px; float:left;" >
-                                      <telerik:RadButton ID="lnkFilter" ButtonType="LinkButton" runat="server" Width="130px" Text="Spam Filter" NavigateUrl="http://srv-spam.danakepner.com/quarantine/Login.aspx" Skin="BlackMetroTouch" Font-Size="X-Small" Target="_blank"></telerik:RadButton>
+                                 <div style="padding:4px 4px 4px 4px; width:220px; float:left;" >
+                                      <telerik:RadButton ID="lnkFilter" ButtonType="LinkButton" runat="server" width="215px" Text="Spam Filter" NavigateUrl="http://srv-spam.danakepner.com/quarantine/Login.aspx" Skin="BlackMetroTouch" Font-Size="X-Small" Target="_blank"></telerik:RadButton>
                                  </div> 
                                                
-                                 <div style="padding:4px 4px 4px 4px;width:160px; float:left; " >
-                                      <telerik:RadButton ID="lnkSecurityReq" ButtonType="LinkButton" runat="server" Width="130px" Text="Security Request/Change" NavigateUrl="~/Information/Form_IS_AccessRequest.pdf" Skin="BlackMetroTouch" Font-Size="X-Small" Target="_blank"></telerik:RadButton>
+                                 <div style="padding:4px 4px 4px 4px;width:220px; float:left; " >
+                                      <telerik:RadButton ID="lnkSecurityReq" ButtonType="LinkButton" runat="server" width="215px" Text="Security Request/Change" NavigateUrl="~/Information/Form_IS_AccessRequest.pdf" Skin="BlackMetroTouch" Font-Size="X-Small" Target="_blank"></telerik:RadButton>
                                  </div>
-                                 <div style="padding:4px 4px 4px 4px;width:160px; float:left; " >
-                                      <telerik:RadButton ID="lnkSecurityAcc" ButtonType="LinkButton" runat="server" Width="130px" Text="Profile Cleanup" NavigateUrl="~/Information/Profile Clean.pdf" Skin="BlackMetroTouch" Font-Size="X-Small" Target="_blank"></telerik:RadButton>
+                                 <div style="padding:4px 4px 4px 4px;width:220px; float:left; " >
+                                      <telerik:RadButton ID="lnkSecurityAcc" ButtonType="LinkButton" runat="server" width="215px" Text="Profile Cleanup" NavigateUrl="~/Information/Profile Clean.pdf" Skin="BlackMetroTouch" Font-Size="X-Small" Target="_blank"></telerik:RadButton>
                                  </div>
                                 
                       </telerik:RadPageView>
                        <telerik:RadPageView ID="Payroll" runat="server" Selected="true" > 
-                             <div style="padding:4px 4px 4px 4px; width:160px; float:left;" >
-                                  <telerik:RadButton ID="lnkPayCom" ButtonType="LinkButton" runat="server" Width="130px" Text="PayCom" NavigateUrl="http://www.paycomonline.com" Skin="BlackMetroTouch" Font-Size="X-Small" Target="_blank"></telerik:RadButton>
+                             <div style="padding:4px 4px 4px 4px; width:200px; float:left;" >
+                                  <telerik:RadButton ID="lnkPayCom" ButtonType="LinkButton" runat="server" width="195px" Text="PayCom" NavigateUrl="http://www.paycomonline.com" Skin="BlackMetroTouch" Font-Size="X-Small" Target="_blank"></telerik:RadButton>
                              </div> 
-                             <div style="padding:4px 4px 4px 4px; width:160px; float:left;" >
-                                  <telerik:RadButton ID="lnkConcur" ButtonType="LinkButton" runat="server" Width="130px" Text="Concur Expenses" NavigateUrl="https://www.concursolutions.com" Skin="BlackMetroTouch" Font-Size="X-Small" Target="_blank"></telerik:RadButton>
+                             <div style="padding:4px 4px 4px 4px; width:200px; float:left;" >
+                                  <telerik:RadButton ID="lnkConcur" ButtonType="LinkButton" runat="server" width="195px" Text="Concur Expenses" NavigateUrl="https://www.concursolutions.com" Skin="BlackMetroTouch" Font-Size="X-Small" Target="_blank"></telerik:RadButton>
                              </div> 
-                             <%--<div style="padding:4px 4px 4px 4px;width:160px; float:left; " >
-                                  <telerik:RadButton ID="lnkTSSalary" ButtonType="LinkButton" runat="server" Width="130px" Text="Salary Timesheet" NavigateUrl="~/Information/Form_TimeSheet_Exempt.pdf" Skin="BlackMetroTouch" Font-Size="X-Small" Target="_blank"></telerik:RadButton>
+                             <%--<div style="padding:4px 4px 4px 4px;width:200px; float:left; " >
+                                  <telerik:RadButton ID="lnkTSSalary" ButtonType="LinkButton" runat="server" width="195px" Text="Salary Timesheet" NavigateUrl="~/Information/Form_TimeSheet_Exempt.pdf" Skin="BlackMetroTouch" Font-Size="X-Small" Target="_blank"></telerik:RadButton>
                              </div>
-                              <div style="padding:4px 4px 4px 4px; width:160px; float:left;" >
-                                  <telerik:RadButton ID="lnkTimeOffReq" ButtonType="LinkButton" runat="server" Width="130px" Text="Time Off Request" NavigateUrl="~/Information/Form_TimeOffRequest.pdf" Skin="BlackMetroTouch" Font-Size="X-Small" Target="_blank"></telerik:RadButton>
+                              <div style="padding:4px 4px 4px 4px; width:200px; float:left;" >
+                                  <telerik:RadButton ID="lnkTimeOffReq" ButtonType="LinkButton" runat="server" width="195px" Text="Time Off Request" NavigateUrl="~/Information/Form_TimeOffRequest.pdf" Skin="BlackMetroTouch" Font-Size="X-Small" Target="_blank"></telerik:RadButton>
                               </div> --%>
-                             <div style="padding:4px 4px 4px 4px;width:160px; float:left;" >
-                                  <telerik:RadButton ID="lnkDirectDeposit" ButtonType="LinkButton" runat="server" Width="130px" Text="Direct Deposit" NavigateUrl="~/Information/Form_DirectDeposit.pdf" Skin="BlackMetroTouch" Font-Size="X-Small" Target="_blank"></telerik:RadButton>
+                             <div style="padding:4px 4px 4px 4px;width:200px; float:left;" >
+                                  <telerik:RadButton ID="lnkDirectDeposit" ButtonType="LinkButton" runat="server" width="195px" Text="Direct Deposit" NavigateUrl="~/Information/Form_DirectDeposit.pdf" Skin="BlackMetroTouch" Font-Size="X-Small" Target="_blank"></telerik:RadButton>
                              </div>
-                             <div style="padding:4px 4px 4px 4px;width:160px; float:left;" >
-                                  <telerik:RadButton ID="lnkCheckRequest" ButtonType="LinkButton" runat="server" Width="130px" Text="Check Request" NavigateUrl="~/Information/Form_CheckRequest.pdf" Skin="BlackMetroTouch" Font-Size="X-Small" Target="_blank"></telerik:RadButton>
+                             <div style="padding:4px 4px 4px 4px;width:200px; float:left;" >
+                                  <telerik:RadButton ID="lnkCheckRequest" ButtonType="LinkButton" runat="server" width="195px" Text="Check Request" NavigateUrl="~/Information/Form_CheckRequest.pdf" Skin="BlackMetroTouch" Font-Size="X-Small" Target="_blank"></telerik:RadButton>
                              </div>
-                             <div style="padding:4px 4px 4px 4px;width:160px; float:left;" >
-                                  <telerik:RadButton ID="lnkW4IRS" ButtonType="LinkButton" runat="server" Width="130px" Text="W4 - IRS Withholdings" NavigateUrl="~/Information/Form_W4.pdf" Skin="BlackMetroTouch" Font-Size="X-Small" Target="_blank"></telerik:RadButton>
+                             <div style="padding:4px 4px 4px 4px;width:200px; float:left;" >
+                                  <telerik:RadButton ID="lnkW4IRS" ButtonType="LinkButton" runat="server" width="195px" Text="W4 - IRS Withholdings" NavigateUrl="~/Information/Form_W4.pdf" Skin="BlackMetroTouch" Font-Size="X-Small" Target="_blank"></telerik:RadButton>
                              </div>
-                             <div style="padding:4px 4px 4px 4px;width:160px; float:left;" >
-                                  <telerik:RadButton ID="lnkWF401k" ButtonType="LinkButton" runat="server" Width="130px" Text="Wells Fargo 401(k)" NavigateUrl="https://www.wellsfargo.com/retirementplan" Skin="BlackMetroTouch" Font-Size="X-Small" Target="_blank"></telerik:RadButton>
+                             <div style="padding:4px 4px 4px 4px;width:200px; float:left;" >
+                                  <telerik:RadButton ID="lnkWF401k" ButtonType="LinkButton" runat="server" width="195px" Text="Wells Fargo 401(k)" NavigateUrl="https://www.wellsfargo.com/retirementplan" Skin="BlackMetroTouch" Font-Size="X-Small" Target="_blank"></telerik:RadButton>
                              </div>
                       </telerik:RadPageView>
                        <telerik:RadPageView ID="Reference" runat="server" > 
 
-                             <div style="padding:4px 4px 4px 4px; width:160px; float:left;" >
-                                  <telerik:RadButton ID="lnkProductCategories" ButtonType="LinkButton" runat="server" Width="130px" Text="Product Categories" NavigateUrl="~/Information/Product_Categories.pdf" Skin="BlackMetroTouch" Font-Size="X-Small" Target="_blank"></telerik:RadButton>
+                             <div style="padding:4px 4px 4px 4px; width:200px; float:left;" >
+                                  <telerik:RadButton ID="lnkProductCategories" ButtonType="LinkButton" runat="server" width="195px" Text="Product Categories" NavigateUrl="~/Information/Product_Categories.pdf" Skin="BlackMetroTouch" Font-Size="X-Small" Target="_blank"></telerik:RadButton>
                              </div> 
-                             <div style="padding:4px 4px 4px 4px;width:160px; float:left; " >
-                                  <telerik:RadButton ID="lnkProductLines" ButtonType="LinkButton" runat="server" Width="130px" Text="Product Lines" NavigateUrl="~/Information/Product_Lines.pdf" Skin="BlackMetroTouch" Font-Size="X-Small" Target="_blank"></telerik:RadButton>
+                             <div style="padding:4px 4px 4px 4px;width:200px; float:left; " >
+                                  <telerik:RadButton ID="lnkProductLines" ButtonType="LinkButton" runat="server" width="195px" Text="Product Lines" NavigateUrl="~/Information/Product_Lines.pdf" Skin="BlackMetroTouch" Font-Size="X-Small" Target="_blank"></telerik:RadButton>
                              </div>
-                             <div style="padding:4px 4px 4px 4px; width:160px; float:left;" >
-                                  <telerik:RadButton ID="lnkProductCatLines" ButtonType="LinkButton" runat="server" Width="130px" Text="Product Cats and Lines" NavigateUrl="~/Information/ProductCatsLines.pdf" Skin="BlackMetroTouch" Font-Size="X-Small" Target="_blank"></telerik:RadButton>
+                             <div style="padding:4px 4px 4px 4px; width:200px; float:left;" >
+                                  <telerik:RadButton ID="lnkProductCatLines" ButtonType="LinkButton" runat="server" width="195px" Text="Product Cats and Lines" NavigateUrl="~/Information/ProductCatsLines.pdf" Skin="BlackMetroTouch" Font-Size="X-Small" Target="_blank"></telerik:RadButton>
                              </div> 
                   
                       </telerik:RadPageView>
                        <telerik:RadPageView ID="Sales" runat="server" > 
-                              <div style="padding:4px 4px 4px 4px; width:160px; float:left;" >
-                                  <telerik:RadButton ID="lnkCredAppDK" ButtonType="LinkButton" runat="server" Width="130px" Text="Credit App - Kepner" NavigateUrl="~/Information/Form_CreditAppDK.pdf" Skin="BlackMetroTouch" Font-Size="X-Small" Target="_blank"></telerik:RadButton>
+                              <div style="padding:4px 4px 4px 4px; width:200px; float:left;" >
+                                  <telerik:RadButton ID="lnkCredAppDK" ButtonType="LinkButton" runat="server" width="195px" Text="Credit App - Kepner" NavigateUrl="~/Information/Form_CreditAppDK.pdf" Skin="BlackMetroTouch" Font-Size="X-Small" Target="_blank"></telerik:RadButton>
                               </div> 
-                              <div style="padding:4px 4px 4px 4px;width:160px; float:left;  " >
-                                  <telerik:RadButton ID="lnkCredAppWI" ButtonType="LinkButton" runat="server" Width="130px" Text="Credit App - Western" NavigateUrl="~/Information/Form_CreditAppWI.pdf" Skin="BlackMetroTouch" Font-Size="X-Small" Target="_blank"></telerik:RadButton>
+                              <div style="padding:4px 4px 4px 4px;width:200px; float:left;  " >
+                                  <telerik:RadButton ID="lnkCredAppWI" ButtonType="LinkButton" runat="server" width="195px" Text="Credit App - Western" NavigateUrl="~/Information/Form_CreditAppWI.pdf" Skin="BlackMetroTouch" Font-Size="X-Small" Target="_blank"></telerik:RadButton>
                               </div>
-                              <div style="padding:4px 4px 4px 4px; width:160px; float:left;" >
-                                  <telerik:RadButton ID="lnkCredAppAZ" ButtonType="LinkButton" runat="server" Width="130px" Text="Credit App - Arizona" NavigateUrl="~/Information/Form_CreditAppDK_AZ.pdf" Skin="BlackMetroTouch" Font-Size="X-Small" Target="_blank"></telerik:RadButton>
+                              <div style="padding:4px 4px 4px 4px; width:200px; float:left;" >
+                                  <telerik:RadButton ID="lnkCredAppAZ" ButtonType="LinkButton" runat="server" width="195px" Text="Credit App - Arizona" NavigateUrl="~/Information/Form_CreditAppDK_AZ.pdf" Skin="BlackMetroTouch" Font-Size="X-Small" Target="_blank"></telerik:RadButton>
                               </div>
-                              <div style="padding:4px 4px 4px 4px;width:160px; float:left; " >
-                                  <telerik:RadButton ID="lnkNewProduct" ButtonType="LinkButton" runat="server" Width="130px" Text="New Product" NavigateUrl="~/Information/Form_NewProduct.pdf" Skin="BlackMetroTouch" Font-Size="X-Small" Target="_blank"></telerik:RadButton>
+                              <div style="padding:4px 4px 4px 4px;width:200px; float:left; " >
+                                  <telerik:RadButton ID="lnkNewProduct" ButtonType="LinkButton" runat="server" width="195px" Text="New Product" NavigateUrl="~/Information/Form_NewProduct.pdf" Skin="BlackMetroTouch" Font-Size="X-Small" Target="_blank"></telerik:RadButton>
                               </div>
-                              <div style="padding:4px 4px 4px 4px; width:160px; float:left;" >
-                                  <telerik:RadButton ID="lnkStockRet" ButtonType="LinkButton" runat="server" Width="130px" Text="Stock Return" NavigateUrl="~/Information/Form_StockReturn.pdf" Skin="BlackMetroTouch" Font-Size="X-Small" Target="_blank"></telerik:RadButton>
+                              <div style="padding:4px 4px 4px 4px; width:200px; float:left;" >
+                                  <telerik:RadButton ID="lnkStockRet" ButtonType="LinkButton" runat="server" width="195px" Text="Stock Return" NavigateUrl="~/Information/Form_StockReturn.pdf" Skin="BlackMetroTouch" Font-Size="X-Small" Target="_blank"></telerik:RadButton>
                               </div>
-                              <div style="padding:4px 4px 4px 4px; width:160px; float:left;" >
-                                  <telerik:RadButton ID="lnkStockAdjust" ButtonType="LinkButton" runat="server" Width="130px" Text="Stock Adjust" NavigateUrl="~/Information/Form_StockAdjustments.pdf" Skin="BlackMetroTouch" Font-Size="X-Small" Target="_blank"></telerik:RadButton>
+                              <div style="padding:4px 4px 4px 4px; width:200px; float:left;" >
+                                  <telerik:RadButton ID="lnkStockAdjust" ButtonType="LinkButton" runat="server" width="195px" Text="Stock Adjust" NavigateUrl="~/Information/Form_StockAdjustments.pdf" Skin="BlackMetroTouch" Font-Size="X-Small" Target="_blank"></telerik:RadButton>
                               </div> 
-                              <div style="padding:4px 4px 4px 4px;width:160px; float:left;" >
-                                  <telerik:RadButton ID="lnkDamagedMat" ButtonType="LinkButton" runat="server" Width="130px" Text="Damaged Material" NavigateUrl="~/Information/Form_DamagedMaterial.pdf" Skin="BlackMetroTouch" Font-Size="X-Small" Target="_blank"></telerik:RadButton>
+                              <div style="padding:4px 4px 4px 4px;width:200px; float:left;" >
+                                  <telerik:RadButton ID="lnkDamagedMat" ButtonType="LinkButton" runat="server" width="195px" Text="Damaged Material" NavigateUrl="~/Information/Form_DamagedMaterial.pdf" Skin="BlackMetroTouch" Font-Size="X-Small" Target="_blank"></telerik:RadButton>
                               </div>
-                              <div style="padding:4px 4px 4px 4px; width:160px; float:left;" >
-                                  <telerik:RadButton ID="lnkAccountChange" ButtonType="LinkButton" runat="server" Width="130px" Text="Account Change" NavigateUrl="~/Information/Form_AccountChange.pdf" Skin="BlackMetroTouch" Font-Size="X-Small" Target="_blank"></telerik:RadButton>
+                              <div style="padding:4px 4px 4px 4px; width:200px; float:left;" >
+                                  <telerik:RadButton ID="lnkAccountChange" ButtonType="LinkButton" runat="server" width="195px" Text="Account Change" NavigateUrl="~/Information/Form_AccountChange.pdf" Skin="BlackMetroTouch" Font-Size="X-Small" Target="_blank"></telerik:RadButton>
                               </div> 
-                              <div style="padding:4px 4px 4px 4px;width:160px; float:left;" >
-                                  <telerik:RadButton ID="lnkAZ5000" ButtonType="LinkButton" runat="server" Width="130px" Text="Arizona (5000)" NavigateUrl="~/Information/Form_AzTaxExempt5000.pdf" Skin="BlackMetroTouch" Font-Size="X-Small" Target="_blank"></telerik:RadButton>
+                              <div style="padding:4px 4px 4px 4px;width:200px; float:left;" >
+                                  <telerik:RadButton ID="lnkAZ5000" ButtonType="LinkButton" runat="server" width="195px" Text="Arizona (5000)" NavigateUrl="~/Information/Form_AzTaxExempt5000.pdf" Skin="BlackMetroTouch" Font-Size="X-Small" Target="_blank"></telerik:RadButton>
                               </div>
                              
-                              <div style="padding:4px 4px 4px 4px; width:160px; float:left;" >
-                                  <telerik:RadButton ID="lnkNewJob" ButtonType="LinkButton" runat="server" Width="130px" Text="New Job" NavigateUrl="~/Information/Form_JobInfo.pdf" Skin="BlackMetroTouch" Font-Size="X-Small" Target="_blank"></telerik:RadButton>
+                              <div style="padding:4px 4px 4px 4px; width:200px; float:left;" >
+                                  <telerik:RadButton ID="lnkNewJob" ButtonType="LinkButton" runat="server" width="195px" Text="New Job" NavigateUrl="~/Information/Form_JobInfo.pdf" Skin="BlackMetroTouch" Font-Size="X-Small" Target="_blank"></telerik:RadButton>
                               </div>
-                              <div style="padding:4px 4px 4px 4px; width:160px; float:left;" >
-                                   <telerik:RadButton ID="lnkNewJobWyo" ButtonType="LinkButton" runat="server" Width="130px" Text="New Job - Wyo" NavigateUrl="~/Information/Form_JobInfo_Wyoming.pdf" Skin="BlackMetroTouch" Font-Size="X-Small" Target="_blank"></telerik:RadButton>
+                              <div style="padding:4px 4px 4px 4px; width:200px; float:left;" >
+                                   <telerik:RadButton ID="lnkNewJobWyo" ButtonType="LinkButton" runat="server" width="195px" Text="New Job - Wyo" NavigateUrl="~/Information/Form_JobInfo_Wyoming.pdf" Skin="BlackMetroTouch" Font-Size="X-Small" Target="_blank"></telerik:RadButton>
                               </div>
 
                         </telerik:RadPageView>
                        <telerik:RadPageView ID="TDG" runat="server" > 
                          
-                            <div style="padding:4px 4px 4px 4px; width:160px; float:left;" >
-                                  <telerik:RadButton ID="lnkTDGVendors" ButtonType="LinkButton" runat="server" Width="130px" Text="TDG Vendors" NavigateUrl="~/Information/TDG_Vendors.pdf" Skin="BlackMetroTouch" Font-Size="X-Small" Target="_blank"></telerik:RadButton>
+                            <div style="padding:4px 4px 4px 4px; width:200px; float:left;" >
+                                  <telerik:RadButton ID="lnkTDGVendors" ButtonType="LinkButton" runat="server" width="195px" Text="TDG Vendors" NavigateUrl="~/Information/TDG_Vendors.pdf" Skin="BlackMetroTouch" Font-Size="X-Small" Target="_blank"></telerik:RadButton>
                             </div> 
-                            <div style="padding:4px 4px 4px 4px;width:160px; float:left; " >
-                                  <telerik:RadButton ID="lnkTDGProfiles" ButtonType="LinkButton" runat="server" Width="130px" Text="TDG Vendor Profiles" NavigateUrl="~/Information/TDG_Vendor_Profiles.pdf" Skin="BlackMetroTouch" Font-Size="X-Small" Target="_blank"></telerik:RadButton>
+                            <div style="padding:4px 4px 4px 4px;width:200px; float:left; " >
+                                  <telerik:RadButton ID="lnkTDGProfiles" ButtonType="LinkButton" runat="server" width="195px" Text="TDG Vendor Profiles" NavigateUrl="~/Information/TDG_Vendor_Profiles.pdf" Skin="BlackMetroTouch" Font-Size="X-Small" Target="_blank"></telerik:RadButton>
                             </div>
            
                         </telerik:RadPageView>
@@ -492,7 +492,7 @@
            </div>
         </div> 
 
-        <div id="CalendarPayScheduleVacation" style="width:1000px; padding-left:15px; vertical-align:bottom;" >
+        <div id="CalendarPayScheduleVacation" style="width:1000px; padding-left:15px; vertical-align:bottom;padding-top:auto" >
   
             <div id="Calendar" style="padding:2px 10px 0px 2px;float:left;width:250px;height:200px;">  
                      <h6>Calendar</h6>       
