@@ -77,6 +77,15 @@
 
             
             <%--Benefits Summaries--%>
+
+            
+            <%--SRS added 2020-05-15:--%>
+            <telerik:AjaxSetting AjaxControlID="lnkDkAnnualReport">
+                <UpdatedControls>
+                    <telerik:AjaxUpdatedControl ControlID="lnkDkAnnualReport" />
+                </UpdatedControls>
+            </telerik:AjaxSetting>
+
             <telerik:AjaxSetting AjaxControlID="lnkBenefitsGuide">
                 <UpdatedControls>
                     <telerik:AjaxUpdatedControl ControlID="lnkBenefitsGuide" />
@@ -263,7 +272,7 @@
           </telerik:RadPageView>
           <telerik:RadPageView ID="Summary" runat="server" > <%-- Benefits Summary --%>
                 <div id="div8" style="margin:15px 5px 5px 15px;float:left;width:1300px;">
-                    <div style="margin:4px 4px 4px 4px;width:320px; float:left; " > <%-- Moved here (Benefits tab) from Health tab by SRS 2019-11-27 BUTTON TEXT: SUMMARY--%>
+                    <div style="margin:4px 4px 4px 4px;width:340px; float:left; " > <%-- Moved here (Benefits tab) from Health tab by SRS 2019-11-27 BUTTON TEXT: SUMMARY--%>
                         <telerik:RadButton ID="lnkBenefitsGuide" ButtonType="LinkButton" runat="server" Skin="BlackMetroTouch" Width="300px" Text="Summary" NavigateUrl="~/HR/2020/2020%20Dana%20Kepner%20OE%20Presentation%20-%20FINAL2.pdf" Target="_blank"></telerik:RadButton>
                     </div> 
 
@@ -272,32 +281,29 @@
                           <telerik:RadButton ID="lnkBenefitsGuideB" ButtonType="LinkButton" runat="server" Skin="BlackMetroTouch" Width="300px" Text="Summary" NavigateUrl="~/HR/2018/2018_OpenEnrollment_BenefitsGuide.pdf" Target="_blank"></telerik:RadButton>
                     </div>--%>
                 <%-- next two divs moved here from health tab. --%>
-                <div id="div10" style="margin:15px 5px 55px 15px;float:left;width:1000px;">
-                     <div style="margin:4px 4px 4px 4px;width:320px; float:left; " >
+                
+                     <div style="margin:4px 4px 4px 4px;width:340px; float:left; " >
                         <telerik:RadButton ID="lnkAllegiance" ButtonType="LinkButton" runat="server" Skin="BlackMetroTouch" Width="300px" Text="Allegiance" NavigateUrl="http://www.askallegiance.com/" Target="_blank"></telerik:RadButton>
                      </div>
-                     <div style="margin:4px 4px 4px 4px;width:320px; float:left; " >
+                     <div style="margin:4px 4px 4px 4px;width:340px; float:left; " >
                         <telerik:RadButton ID="lnkDeltaDental2" ButtonType="LinkButton" runat="server" Skin="BlackMetroTouch" Width="300px" Text="Delta Dental" NavigateUrl="http://www.deltadental.com/" Target="_blank"></telerik:RadButton>
                      </div>
-                     <div style="margin:4px 4px 4px 4px;width:320px; float:left; " >
+                     <div style="margin:4px 4px 4px 4px;width:340px; float:left; " >
                           <telerik:RadButton ID="lnkHIPPA" ButtonType="LinkButton" runat="server" Skin="BlackMetroTouch" Width="300px" Text="HIPPA" NavigateUrl="~/Information/Form_HIPPA_Privacy.pdf" Target="_blank"></telerik:RadButton>
                      </div>
-                </div> 
-                <div id="div6" style="margin:15px 5px 55px 15px;float:left;width:1000px;">
-                    <div style="margin:4px 4px 4px 4px;width:320px; float:left; " >
+                
+                
+                    <div style="margin:4px 4px 4px 4px;width:340px; float:left; " >
                         <telerik:RadButton ID="lnkPreventiveDrug" ButtonType="LinkButton" runat="server" Skin="BlackMetroTouch" Width="300px" Text="Welldyne Prescriptions/Preventive" NavigateUrl="~/HR/2020/Welldyne%20-FORMULARY-(2020).pdf" Target="_blank"></telerik:RadButton>
                     </div>
-                </div>
+                
 
                     <div style="margin:4px 4px 4px 4px;width:340px; float:left; " >
                           <telerik:RadButton ID="lnkEnrollmentPresentation" ButtonType="LinkButton" runat="server" Skin="BlackMetroTouch" Width="300px" Text="Enrollment Presentation" NavigateUrl="~/HR/2018/2018_OpenEnrollment_Main.pdf" Target="_blank"></telerik:RadButton>
                     </div>
-                    <div style="margin:4px 4px 4px 4px;width:340px; float:left; " >
-                          <telerik:RadButton ID="lnkPaycomInstructions" ButtonType="LinkButton" runat="server" Skin="BlackMetroTouch" Width="300px" Text="Paycom Enrollment Instructions" NavigateUrl="~/HR/2018/2018_OpenEnrollment_PaycomInstructions.pdf" Target="_blank"></telerik:RadButton>
-                    </div>
+                    
 
-                </div>
-                <div id="div7" style="margin:15px 5px 5px 15px;float:left;width:1300px;">
+
                     <div style="margin:4px 4px 4px 4px;width:340px; float:left; " >
                           <telerik:RadButton ID="lnkSBCOAP" ButtonType="LinkButton" runat="server" Skin="BlackMetroTouch" Width="300px" Text="Summary of Benefits Coverage - Open Access Plus Plan" NavigateUrl="~/HR/2020/Allegiance%20PPO%20SBC%202020.pdf" Target="_blank"></telerik:RadButton>
                     </div>
@@ -308,19 +314,21 @@
                           <telerik:RadButton ID="lnkKP" ButtonType="LinkButton" runat="server" Skin="BlackMetroTouch" Width="300px" Text="Summary of Benefits Coverage - Kaiser" NavigateUrl="~/HR/2020/Kaiser%20SBC%202020.pdf" Target="_blank"></telerik:RadButton>
                     </div>
                     
-                </div>
-                 <div id="div9" style="margin:15px 5px 5px 15px;float:left;width:1300px;">
+                    
+
+                     <%--added per Tracy 2020-05-15 by SRS--%>
+                    <div style="margin:4px 4px 4px 4px;width:340px; float:left; " >
+                        <telerik:RadButton ID="lnkDkAnnualReport" ButtonType="LinkButton" runat="server" Skin="BlackMetroTouch" Width="300px" Text="2019 DK Summary Annual Report (SAR)" NavigateUrl="~/HR/2020/2019_DK_SUMMARY_ANNUAL_REPORT.pdf" Target="_blank"></telerik:RadButton>
+                    </div> 
+
+                    <div style="margin:4px 4px 4px 4px;width:340px; float:left; " >
+                          <telerik:RadButton ID="lnkPaycomInstructions" ButtonType="LinkButton" runat="server" Skin="BlackMetroTouch" Width="300px" Text="Paycom Enrollment Instructions" NavigateUrl="~/HR/2018/2018_OpenEnrollment_PaycomInstructions.pdf" Target="_blank"></telerik:RadButton>
+                    </div>
+
                     <div style="margin:4px 4px 4px 4px;width:340px; float:left; " >
                         <telerik:RadButton ID="lnkUnum" ButtonType="LinkButton" runat="server" Skin="BlackMetroTouch" Width="300px" Text="UNUM Accident and Critical Care" NavigateUrl="~/HR/2018/2018_Unum.pdf" Target="_blank"></telerik:RadButton>
                     </div>
-                 </div>
-
-                <%--<div id="div11" style="margin:75px 5px 5px 15px;float:left;width:1300px;">
-                     Removed per Tracy 2019-11-27 by SRS
-                    <div style="margin:4px 4px 4px 4px;width:340px; float:left; " >
-                        <telerik:RadButton ID="lnkFSA2018" ButtonType="LinkButton" runat="server" Skin="BlackMetroTouch" Width="300px" Text="FSA 2018 Amendment" NavigateUrl="FSA_2018Amendment.pdf" Target="_blank"></telerik:RadButton>
-                    </div> 
-                </div>--%>
+                </div>
 
           </telerik:RadPageView>
           <telerik:RadPageView ID="Financial" runat="server">  <%-- '401(k) Retirement Plan' tab content --%>

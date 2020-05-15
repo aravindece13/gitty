@@ -20,6 +20,13 @@
             
            
             <%--Employee Links--%>
+            <%--SRS added 2020-05-11:--%>
+            <telerik:AjaxSetting AjaxControlID="lnkEmpStatusChange">
+                <UpdatedControls>
+                    <telerik:AjaxUpdatedControl ControlID="lnkEmpStatusChange" />
+                </UpdatedControls>
+            </telerik:AjaxSetting>
+
             <telerik:AjaxSetting AjaxControlID="lnkHandbook">
                 <UpdatedControls>
                     <telerik:AjaxUpdatedControl ControlID="lnkHandbook" />
