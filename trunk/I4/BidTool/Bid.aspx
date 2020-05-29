@@ -54,6 +54,11 @@
         function ClickingDeleteSubsection(sender, args) {
                 args.set_cancel(!window.confirm("Are you sure you want to PERMANENTLY delete this subsection?  This action is not reversible."));
         }
+        
+        // Added 2020-05-29 to warn user about hiding a quote.
+        function ClickingHideQuote(sender, args) {
+            args.set_cancel(!window.confirm("Are you sure you want to hide this quote?  This action is only reversible by the database administrator."));
+        }
 
     </script>
 </telerik:RadCodeBlock>
@@ -1459,7 +1464,7 @@
 
                                 </div>
                                 <div style="width:220px; float:left; vertical-align:middle;">
-                                                <telerik:RadButton ID="btnHideQuote" runat="server" Text="Hide Quote" UseSubmitBehavior="true" Width="200px" Skin="BlackMetroTouch"></telerik:RadButton>
+                                                <telerik:RadButton ID="btnHideQuote" runat="server" OnClientClicking="ClickingHideQuote" Text="Hide Quote" UseSubmitBehavior="true" Width="200px" Skin="BlackMetroTouch"></telerik:RadButton>
                                 </div>
                             </div>
                          </div>
